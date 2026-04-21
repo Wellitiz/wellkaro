@@ -1,0 +1,22 @@
+# Configuração do Sistema RAG Antigravity
+# Copie este arquivo para seus projetos em Projetos/
+
+[rag]
+enabled = true
+chroma_path = ../chroma_db
+
+[defaults]
+n_agents = 1
+n_skills = 2
+
+[project]
+# Nome do projeto - usado para filtrar habilidades relevantes
+name = ""
+# Tecnologias usadas (separadas por vírgula)
+tech_stack = ""
+
+[patterns]
+# Palavras-chave para buscar habilidades relacionadas ao projeto
+nextjs = nextjs,react,frontend,typescript
+prisma = prisma,orm,database,mysql
+api = api,rest,endpoint,backend
