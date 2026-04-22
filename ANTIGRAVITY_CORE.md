@@ -1,6 +1,6 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v5 (God Mode)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v5.1 (God Mode)
 
-Bem-vindo ao **Antigravity v5**. Esta versao marca a transicao para uma inteligencia autossuficiente, onde o sistema nao apenas recupera dados, mas refina seu proprio pensamento e aprende com cada tarefa concluida.
+Bem-vindo ao **Antigravity v5.1**. Esta versão marca a transição para uma inteligência autossuficiente com integrações externas de生产力 (workflow, marketing, video).
 
 ---
 
@@ -32,6 +32,40 @@ O sistema agora aprende com o proprio sucesso:
 
 ---
 
+## 🌐 Integrações Externas v5.1
+
+### Superpowers (Workflow Methodology)
+- **Origem:** [obra/superpowers](https://github.com/obra/superpowers) (163k ⭐)
+- **Arquivo:** `.agent/methodology/superpowers/`
+- **Skills:** brainstorming, writing-plans, subagent-driven-dev, test-driven-dev, systematic-debugging
+
+### Claude SEO Extension (Marketing)
+- **Origem:** [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) (5.3k ⭐)
+- **Arquivo:** `.agent/marketing/seo/claude-seo-extension/`
+- **Features:** Google APIs, GEO/AEO, drift monitoring
+
+### Marketing Skills Extension (CRO/Email)
+- **Origem:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (22.8k ⭐)
+- **Arquivo:** `.agent/marketing/marketing-skills-extension/`
+- **Skills:** Page CRO, Signup CRO, Copywriting, Email sequences
+
+### Context Engineering (AI)
+- **Origem:** [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) (15.2k ⭐)
+- **Arquivo:** `.agent/ai/context-engineering/`
+- **Features:** Progressive disclosure, memory architecture
+
+### NotebookLM Integration (AI)
+- **Origem:** [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) (6k ⭐)
+- **Arquivo:** `.agent/ai/notebooklm-integration/`
+- **Features:** RAG source-grounded, low hallucination
+
+### Remotion (Frontend)
+- **Origem:** [remotion-dev/remotion](https://github.com/remotion-dev/remotion) (44.2k ⭐)
+- **Arquivo:** `.agent/frontend/remotion/`
+- **Features:** Video generation via React
+
+---
+
 ## 🏗️ Fluxo de Trabalho Automatizado (Zero Friction)
 
 *   **Sincronizacao Inteligente**: O Core se auto-indexa ao detectar mudancas fisicas ou estruturais.
@@ -43,7 +77,7 @@ O sistema agora aprende com o proprio sucesso:
 
 ---
 
-## 📂 Estrutura de Arquivos v5
+## 📂 Estrutura de Arquivos v5.1
 
 | Arquivo/Pasta | Funcao |
 | :--- | :--- |
@@ -52,7 +86,9 @@ O sistema agora aprende com o proprio sucesso:
 | `monitor.py` | Painel de controle e observabilidade real-time. |
 | `knowledge_distiller.py` | Motor de aprendizado autônomo. |
 | `save_fix.py` | Utilitario para alimentacao manual de memoria. |
-| `chroma_db/` | Banco vetorial persistente (14.000+ documentos). |
+| `chroma_db/` | Banco vetorial persistente (13.800+ documentos). |
+| `.agent/methodology/superpowers/` | Superpowers workflow system |
+| `.agent/frontend/remotion/` | Video generation framework |
 
 ---
 

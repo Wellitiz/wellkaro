@@ -1,4 +1,4 @@
-# 🛸 Antigravity v5 God Mode: Mapa do Ecossistema
+# 🛸 Antigravity v5.1 God Mode: Mapa do Ecossistema
 
 Este documento fornece a visualização estrutural completa do ecossistema Antigravity, detalhando a função de cada camada e arquivo no sistema.
 
@@ -17,9 +17,18 @@ ANTIGRAVITY_ROOT/
 ├── 📂 Knowledge Base ( Memória Global )
 │   ├── .agent/               # Repositório de 1.300+ Agentes e Skills
 │   │   ├── ai/               # Modelos, Prompts e Especialistas em LLM
+│   │   │   ├── context-agent/       # Context management
+│   │   │   └── notebooklm-integration/ # NotebookLM RAG integration
 │   │   ├── frontend/         # React, Next.js, UI/UX, CSS, Tailwind
+│   │   │   └── remotion/    # Video generation via React
 │   │   ├── backend/          # Node, Python, Databases, APIs
 │   │   ├── security/         # Auditoria, Auth, Proteção, Pentest
+│   │   ├── marketing/        # SEO, Content, CRO, Copywriting
+│   │   │   ├── seo/              # SEO fundamentals + extensions
+│   │   │   ├── seo/claude-seo-extension/  # Google APIs, GEO
+│   │   │   └── marketing-skills-extension/  # CRO, Email, Analytics
+│   │   ├── methodology/      # Workflow systems
+│   │   │   └── superpowers/  # Superpowers agentic workflow
 │   │   └── ... (mais 50+ categorias multitag)
 │   └── chroma_db/            # Banco Vetorial (HNSW Index v5)
 │
@@ -59,3 +68,69 @@ A organização em pastas categoriais (Tags) permite que o sistema saiba *onde* 
 
 > [!TIP]
 > **Dica Visual**: Imagine o Antigravity como um organismo. O `agent_router` é o cérebro, a `.agent/` é a biblioteca, o `monitor` são os olhos e o `distiller` é a memória de longo prazo. 🛸
+
+---
+
+## 🔗 Integrações Externas (v5.1+)
+
+Novos layers adicionados ao ecossistema Antigravity:
+
+### 1. Superpowers (Methodology)
+**Origem:** [obra/superpowers](https://github.com/obra/superpowers) | **Stars:** 163k ⭐
+
+Workflow completo de desenvolvimento agentic:
+- `brainstorming/` - Design colaborativo
+- `writing-plans/` - Planos de implementação
+- `subagent-driven-development/` - Execução via subagentes
+- `test-driven-development/` - RED-GREEN-REFACTOR
+- `systematic-debugging/` - Debug em 4 fases
+
+### 2. Claude SEO Extension (Marketing)
+**Origem:** [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | **Stars:** 5.3k ⭐
+
+Features avançadas de SEO:
+- `/seo google report` - Relatórios PDF com gráficos
+- `/seo geo` - GEO/AEO (AI Search Optimization)
+- `/seo drift` - Monitoramento de mudanças
+- Google APIs (PageSpeed, CrUX, GSC, GA4)
+
+### 3. Marketing Skills Extension (Marketing)
+**Origem:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | **Stars:** 22.8k ⭐
+
+CRO e Copywriting:
+- Page CRO, Signup CRO, Form CRO
+- Copywriting (AIDA, PAS frameworks)
+- Cold email, Email sequences
+- A/B Testing framework
+
+### 4. Context Engineering (AI)
+**Origem:** [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | **Stars:** 15.2k ⭐
+
+Otimização de contexto:
+- Progressive disclosure pattern
+- Memory architecture
+- Context compression
+- Lost-in-the-middle prevention
+
+### 5. NotebookLM Integration (AI)
+**Origem:** [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | **Stars:** 6k ⭐
+
+RAG source-grounded:
+- Google NotebookLM API integration
+- Source-grounded responses
+- Low hallucination rate
+- Minimal token cost
+
+### 6. Remotion (Frontend)
+**Origem:** [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | **Stars:** 44.2k ⭐
+
+Video generation via React:
+- `/remotion init` - Iniciar projeto Remotion
+- `/remotion dev` - Development server
+- `/remotion build` - Build vídeo
+- Templates: intro, social, presentation, logo
+
+---
+
+> [!NOTE]
+> **Zero conflitos** - Todos os repositórios externos foram analisados contra o `.agent/` existente. Skills de SEO já presentes foram extendidas, não substituídas. Novas categorias (methodology, context-engineering) são complementares.

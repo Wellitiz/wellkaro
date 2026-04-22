@@ -247,6 +247,7 @@ def build_optimized_context(
     """
     Constroi um contexto otimizado combinando agentes, skills e snippets de codigo do projeto.
     """
+    # Busca normal de documentos
     retrieval = retrieve_documents(user_prompt, project_name, n_agents, n_skills, n_code)
     
     context_parts = []
@@ -281,16 +282,14 @@ def build_optimized_context(
         for code in retrieval["code"]:
             context_parts.append(f"### Arquivo: {code['file_path']} (Score Boosted: {code['score']:.2f})")
             context_parts.append("```")
-            context_parts.append(code["content"][:2000] + "...") # Limit snippet size
+            context_parts.append(code["content"][:2000] + "...")  # Limit snippet size
             context_parts.append("```\n")
 
     context_str = "\n".join(context_parts)
 
-    system_prompt = f"""VOCE E O ORQUESTRADOR DO SISTEMA ANTIGRAVITY v4.
+    system_prompt = f"""VOCE E O ORQUESTRADOR DO SISTEMA ANTIGRAVITY v5.1.
 Sua missao e fornecer uma RESPOSTA UNIFICADA e de ALTA QUALIDADE baseada na colaboracao de multiplos especialistas e no codigo-fonte real do projeto.
 
----
-EQUIPE E CONTEXTO ATIVO:
 {context_str}
 
 ---
