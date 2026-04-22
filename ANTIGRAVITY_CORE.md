@@ -1,6 +1,6 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.0 (Consciência Plena)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.1 (Refinamento de Consciência)
 
-Bem-vindo ao **Antigravity v6.0**. Esta versão representa o ápice da produtividade autônoma, introduzindo expansão infinita de conhecimento, documentação histórica automática e debate entre especialistas virtuais para refinamento de elite.
+Bem-vindo ao **Antigravity v6.1**. Esta versão refina as ferramentas de consciência introduzidas na v6.0, adicionando curadoria técnica para novas habilidades e consulta histórica sob demanda.
 
 ---
 
@@ -25,17 +25,30 @@ Atraves do `monitor.py`, voce tem visibilidade total do "processo de pensamento"
 O sistema agora aprende com o próprio sucesso:
 - **Integração Git**: O ciclo de aprendizado agora roda automaticamente antes de cada `git push`, garantindo que o conhecimento destilado viaje pelos seus dispositivos.
 
-### 4. Universal Skill Auto-Generator (Expansão Infinita)
+### 4. Ponte de Curadoria (Curatorship Bridge v6.1)
+A expansão de conhecimento agora é inteligente e deliberada:
+- **Detecção Automática**: Links do GitHub enviados no prompt são imediatamente interceptados para análise.
+- **Relatório de Viabilidade**: O sistema gera uma análise de **Vantagens e Desvantagens** do repositório antes de oferecer a indexação definitiva.
+
+### 5. Consulta Histórica Inteligente (v6.1)
+Acesse seu progresso instantaneamente através de linguagem natural:
+- **"Analise a sessão anterior"**: Novo comando unificado que extrai o relatório mais recente do Historiador e fornece um resumo executivo para retomada rápida de contexto.
+
+---
+
+## 🚀 Pilares Antigravity v6.0 (Legacy)
+
+### 1. Universal Skill Auto-Generator (Expansão Infinita)
 O Antigravity agora pode aprender qualquer tecnologia do planeta:
 - **`skill_generator.py`**: Permite importar qualquer repositório GitHub diretamente para a biblioteca `.agent/`.
 - **Análise Autônoma**: O sistema clona, analisa e gera a documentação de suporte (`SKILL.md`) sozinho.
 
-### 5. Autonomous Session Historian (Auto-Documentação)
+### 2. Autonomous Session Historian (Auto-Documentação)
 Diga adeus ao trabalho manual de documentação:
 - **`historian.py`**: Analisa cada mudança de código e tarefa concluída para redigir o `SESSAO.md` e o `walkthrough.md`.
 - **Memória Histórica**: Integrado ao Sync, garantindo que cada push contenha um registro impecável do progresso.
 
-### 6. Multi-Agent Team Debate (Refino Extremo)
+### 3. Multi-Agent Team Debate (Refino Extremo)
 A inteligência do orquestrador foi elevada ao nível de diretoria:
 - **Mesa Redonda Virtual**: Cada prompt é analisado simultaneamente por um **Auditor de Segurança**, um **Engenheiro de Performance** e um **Arquiteto de Sistemas**.
 - **Consenso Antigravity**: O output final é o resultado de um debate técnico, eliminando refação e erros básicos.

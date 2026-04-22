@@ -72,5 +72,23 @@ Esta sessão focou na implementação de ferramentas de consciência v6.0.
     
     print(f"[OK] walkthrough.md atualizado pelo Historiano.")
 
+def read_last_session():
+    """Lê a última sessão registrada no SESSAO.md."""
+    if not SESSAO_FILE.exists():
+        return "[!] Erro: Nenhum histórico de sessão encontrado."
+    
+    content = SESSAO_FILE.read_text(encoding="utf-8")
+    # O Historiano salva a mais recente no topo. Pegamos até o próximo separador ou fim.
+    sessions = content.split("# 📜 Relatório do Historiano v6.0")
+    if len(sessions) < 2:
+        return "[!] Erro: Formato de histórico não reconhecido."
+    
+    last_session = sessions[1].strip()
+    return f"# 📜 Última Sessão Registrada\n{last_session}"
+
 if __name__ == "__main__":
-    generate_session_summary()
+    import sys
+    if "--analyze" in sys.argv:
+        print(read_last_session())
+    else:
+        generate_session_summary()

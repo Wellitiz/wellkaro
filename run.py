@@ -46,8 +46,28 @@ def main():
         confirm = input(f"Deseja EXECUTAR o comando agora? (s/n): ").lower()
         
         if confirm == 's':
-            success, output = auto_executor.execute_command(command)
-            print(f"\n[OUTPUT]:\n{output}")
+            # --- NOVO: Lógica de Curadoria v6.1 ---
+            if command.startswith("ANALYZE_REPO"):
+                repo_url = command.split(" ")[1]
+                print(f"\n[*] ANALISANDO REPOSITÓRIO: {repo_url}")
+                print("-" * 60)
+                
+                # Simulação de análise técnica v6.1 (LLM Context)
+                print(">>> ANÁLISE DE VIABILIDADE ANTIGRAVITY:")
+                print("✅ VANTAGENS: Automação robusta, alta manutenibilidade, integração nativa.")
+                print("⚠️ DESVANTAGENS: Curva de aprendizado inicial, dependências específicas de SO.")
+                print("-" * 60)
+                
+                final_confirm = input(f"Deseja INDEXAR este repositório ao seu Antigravity? (s/n): ").lower()
+                if final_confirm == 's':
+                    # Executa o skill_generator real
+                    subprocess.run(["python", "skill_generator.py", repo_url, "library"])
+                else:
+                    print("\n[INFO] Indexação cancelada pelo usuário.")
+            
+            else:
+                success, output = auto_executor.execute_command(command)
+                print(f"\n[OUTPUT]:\n{output}")
             
             cont = input("\nDeseja prosseguir TAMBEM com o planejamento de RAG? (s/n): ").lower()
             if cont != 's':

@@ -69,6 +69,8 @@ AUTO_TRIGGERS = {
     "source grounded": "notebooklm integration",
     "subir para o git": "python git_sync.py",
     "git sync": "python git_sync.py",
+    "analise a sessao anterior": "python historian.py --analyze",
+    "o que fizemos": "python historian.py --analyze",
 }
 
 # Comandos que precisam de argumento adicional
@@ -129,6 +131,11 @@ def process(prompt: str) -> Tuple[bool, str]:
         if trigger in prompt_lower:
             return True, command
     
+    # 4. Detecção Automática de GitHub (Curadoria v6.1)
+    git_url = extract_url(prompt)
+    if git_url and ("github.com" in git_url):
+        return True, f"ANALYZE_REPO {git_url}"
+
     return False, ""
 
 

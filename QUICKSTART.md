@@ -1,51 +1,40 @@
-# 🛸 Antigravity v6.0: QuickStart (Consciência Plena)
+# 🛸 Antigravity v6.1: QuickStart (Refinamento de Consciência)
 
-Bem-vindo à era da Consciência Plena. O Antigravity v6.0 é um sistema que aprende, executa e se documenta de forma totalmente autônoma.
+O Antigravity v6.1 agora possui **Curadoria Inteligente** e **Consulta Histórica**.
 
 ---
 
-## ⚡ Início Rápido v6.0
+## ⚡ Novos Fluxos v6.1
 
-Para iniciar qualquer fluxo de planejamento ou ação técnica unificada:
+### 1. Curadoria de Repositórios (GitHub Analyze)
+Ao enviar qualquer link do GitHub no prompt, o sistema entrará em **Modo de Curadoria**:
+1.  O sistema detecta a URL.
+2.  Gera um relatório de **Vantagens e Desvantagens** (Pros/Cons).
+3.  Pergunta se você deseja realmente indexar à sua biblioteca.
+
+### 2. Consulta Histórica sob Demanda
+Para saber o estado atual do projeto ou o que foi feito na última sessão:
 ```bash
-python run.py "seu briefing ou comando aqui"
+python run.py "o que fizemos na sessão anterior?"
+# OU
+python run.py "Analise a sessão anterior"
 ```
 
 ---
 
-## 📂 Novas Super-Habilidades v6.0
+## 📂 Recapitulativo v6.0 (Consciência Plena)
 
-### 1. Absorver Tecnologia (Universal Generator)
-Deseja ensinar uma tecnologia nova ao seu Antigravity? Use o gerador automático:
-```bash
-# Sintaxe: python skill_generator.py [URL_GIT] [CATEGORIA]
-python skill_generator.py https://github.com/lucide-react/lucide library
-```
-*O sistema clonará, analisará e criará a documentação de skill em segundos.*
-
-### 2. Sincronização Consciente (Auto-Documentation)
-Suba suas alterações para o GitHub com documentação histórica automática:
+### 1. Sincronização Consciente
 ```bash
 python git_sync.py
 ```
-*Este comando agora roda o **Historian** (gera SESSAO.md/walkthrough.md) e o **Knowledge Distiller** (aprende soluções) antes de cada push.*
+*Gera documentação automática e aprende com a sessão antes de subir para o GitHub.*
 
-### 3. Debate de Elite (Multi-Agent Team)
-Ao pedir algo via `run.py`, o Antigravity executará um debate interno entre:
-- **CyberGuard** (Segurança)
-- **NitroStream** (Performance)
-- **NexusPrime** (Arquitetura)
-
----
-
-## 🛠️ Comandos Essenciais
-
-| Comando | Função |
-| :--- | :--- |
-| `python run.py` | Entrada Universal (Planejamento + Ações Autônomas). |
-| `python monitor.py` | Abre o Painel de Consciência (Monitor de Debate Real-time). |
-| `python git_sync.py` | Sincroniza, Aprende e Documenta no GitHub. |
-| `python skill_generator.py` | Importa novos repositórios Git para a biblioteca. |
+### 2. Debate de Elite (Multi-Agent Team)
+Observe o debate entre **CyberGuard**, **NitroStream** e **NexusPrime** em cada resposta no monitor:
+```bash
+python monitor.py
+```
 
 ---
-> 🛸 **Antigravity v6.0** - Inteligência Ativa. Consciência Plena.
+> 🛸 **Antigravity v6.1** - Consciência Refinada. Curadoria Ativa.
