@@ -1,28 +1,40 @@
-# 🛸 Antigravity v5: God Mode Quickstart
+# 🛸 Antigravity v6.0: QuickStart (Consciência Plena)
 
-O Antigravity v5 é um ecossistema de inteligência autônoma. Siga este guia para ativar o monitoramento e o aprendizado contínuo.
+Bem-vindo à era da Consciência Plena. O Antigravity v6.0 é um sistema que aprende, executa e se documenta de forma totalmente autônoma.
 
 ---
 
-## ⚡ Início Rápido (3 Passos)
+## ⚡ Início Rápido v6.0
 
-### 1. Ative o Monitor de Consciência
-Abra um terminal dedicado e deixe-o aberto para ver o "pensamento" da IA em tempo real:
+Para iniciar qualquer fluxo de planejamento ou ação técnica unificada:
 ```bash
-python monitor.py
+python run.py "seu briefing ou comando aqui"
 ```
 
-### 2. Gere o Contexto Inteligente
-Use o Planejador Automático para sua tarefa. O sistema aplicará **Neural Reranking (100% de Precisão)** e **Context Boosting** automaticamente:
-```bash
-python run.py "Briefing do seu projeto aqui"
-```
+---
 
-### 3. Destile o Aprendizado (Self-Learning)
-Ao final do dia ou de uma tarefa concluída, salve o conhecimento na memória de longo prazo:
+## 📂 Novas Super-Habilidades v6.0
+
+### 1. Absorver Tecnologia (Universal Generator)
+Deseja ensinar uma tecnologia nova ao seu Antigravity? Use o gerador automático:
 ```bash
-python knowledge_distiller.py "NomeDoProjeto"
+# Sintaxe: python skill_generator.py [URL_GIT] [CATEGORIA]
+python skill_generator.py https://github.com/lucide-react/lucide library
 ```
+*O sistema clonará, analisará e criará a documentação de skill em segundos.*
+
+### 2. Sincronização Consciente (Auto-Documentation)
+Suba suas alterações para o GitHub com documentação histórica automática:
+```bash
+python git_sync.py
+```
+*Este comando agora roda o **Historian** (gera SESSAO.md/walkthrough.md) e o **Knowledge Distiller** (aprende soluções) antes de cada push.*
+
+### 3. Debate de Elite (Multi-Agent Team)
+Ao pedir algo via `run.py`, o Antigravity executará um debate interno entre:
+- **CyberGuard** (Segurança)
+- **NitroStream** (Performance)
+- **NexusPrime** (Arquitetura)
 
 ---
 
@@ -30,32 +42,10 @@ python knowledge_distiller.py "NomeDoProjeto"
 
 | Comando | Função |
 | :--- | :--- |
-| `python run.py` | Gera Plano de Execução + Contexto Neural. |
-| `python monitor.py` | Abre o Painel de Consciência (Dashboard CLI). |
-| `python knowledge_distiller.py` | Extrai lições aprendidas (v5 Self-Learning). |
-| `python index_skills.py` | Sincronização manual da base de conhecimento. |
-| `python save_fix.py` | Salva uma correção técnica manualmente. |
+| `python run.py` | Entrada Universal (Planejamento + Ações Autônomas). |
+| `python monitor.py` | Abre o Painel de Consciência (Monitor de Debate Real-time). |
+| `python git_sync.py` | Sincroniza, Aprende e Documenta no GitHub. |
+| `python skill_generator.py` | Importa novos repositórios Git para a biblioteca. |
 
 ---
-
-## 📂 Estrutura v5 God Mode
-
-*   **`agent_router.py`**: O orquestrador neural (Cérebro).
-*   **`.agent/`**: Biblioteca de 1.300+ habilidades categorizadas em pastas/tags.
-*   **`.agent/custom-fixes/`**: Onde o aprendizado é armazenado.
-*   **`antigravity_conscience.log`**: O fluxo de dados que alimenta o monitor.
-
----
-
-## 🎯 Por que usar o Monitor?
-
-No v5, o Antigravity não apenas busca arquivos; ele refina a relevância usando **Neural Reranking**. No monitor, você verá:
-- **🎯 Projeto Ativo**: Boost de 1.5x em arquivos do seu código.
-- **🛠️ Soluções Passadas**: Boost de 1.3x em correções já feitas.
-- **🏷️ Categorias**: Boost de 1.2x em domínios específicos (ex: Security).
-- **🧠 Precisão Neural**: O score final validado pelo motor local.
-
----
-
-> [!TIP]
-> **Always Keep the Monitor Open**: Ver o sistema selecionando as melhores skills em tempo real ajuda você a entender como o contexto está sendo refinado para sua tarefa atual. 🛸
+> 🛸 **Antigravity v6.0** - Inteligência Ativa. Consciência Plena.

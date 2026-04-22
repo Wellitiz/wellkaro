@@ -1,6 +1,6 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v5.1 (God Mode)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.0 (Consciência Plena)
 
-Bem-vindo ao **Antigravity v5.1**. Esta versão marca a transição para uma inteligência autossuficiente com integrações externas de生产力 (workflow, marketing, video).
+Bem-vindo ao **Antigravity v6.0**. Esta versão representa o ápice da produtividade autônoma, introduzindo expansão infinita de conhecimento, documentação histórica automática e debate entre especialistas virtuais para refinamento de elite.
 
 ---
 
@@ -22,13 +22,23 @@ Atraves do `monitor.py`, voce tem visibilidade total do "processo de pensamento"
     - Alertas de boosts aplicados (Projeto 🎯, Solucao 🛠️, Categoria 🏷️).
 
 ### 3. Self-Learning (Knowledge Distiller)
-O sistema agora aprende com o proprio sucesso:
-- **`knowledge_distiller.py`**: Motor que analisa tarefas concluidas no `task.md` e extrai solucoes tecnicas para o repositorio de `custom-fixes`.
-- **Aprendizado Continuo**: Cada bug corrigido gera uma memoria que sera priorizada em futuras tarefas similares.
+O sistema agora aprende com o próprio sucesso:
+- **Integração Git**: O ciclo de aprendizado agora roda automaticamente antes de cada `git push`, garantindo que o conhecimento destilado viaje pelos seus dispositivos.
 
-### 4. Inteligencia Categorical & Multi-Project Aware
-- **Hierarquia v5**: Agrupamento de 1.300+ itens em categorias logicas (Frontend, Security, AI, etc).
-- **Multi-Tagging**: Suporte a tags combinadas para contexto hibrido.
+### 4. Universal Skill Auto-Generator (Expansão Infinita)
+O Antigravity agora pode aprender qualquer tecnologia do planeta:
+- **`skill_generator.py`**: Permite importar qualquer repositório GitHub diretamente para a biblioteca `.agent/`.
+- **Análise Autônoma**: O sistema clona, analisa e gera a documentação de suporte (`SKILL.md`) sozinho.
+
+### 5. Autonomous Session Historian (Auto-Documentação)
+Diga adeus ao trabalho manual de documentação:
+- **`historian.py`**: Analisa cada mudança de código e tarefa concluída para redigir o `SESSAO.md` e o `walkthrough.md`.
+- **Memória Histórica**: Integrado ao Sync, garantindo que cada push contenha um registro impecável do progresso.
+
+### 6. Multi-Agent Team Debate (Refino Extremo)
+A inteligência do orquestrador foi elevada ao nível de diretoria:
+- **Mesa Redonda Virtual**: Cada prompt é analisado simultaneamente por um **Auditor de Segurança**, um **Engenheiro de Performance** e um **Arquiteto de Sistemas**.
+- **Consenso Antigravity**: O output final é o resultado de um debate técnico, eliminando refação e erros básicos.
 
 ---
 

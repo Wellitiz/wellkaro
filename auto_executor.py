@@ -11,10 +11,18 @@ Uso:
 
 import subprocess
 import re
+import json
 from pathlib import Path
 from typing import Optional, Tuple
 
-# Mapping de triggers → comandos
+# Importamos o motor neural v5 do agent_router
+try:
+    from agent_router import retrieve_documents, get_reranker
+    HAS_ROUTER = True
+except ImportError:
+    HAS_ROUTER = False
+
+# Mapping de triggers estáticos (Fallback seguro)
 AUTO_TRIGGERS = {
     # Remotion (Vídeo)
     "make a video": "npx create-video",
@@ -83,35 +91,44 @@ def extract_url(prompt: str) -> Optional[str]:
 
 def process(prompt: str) -> Tuple[bool, str]:
     """
-    Processa o prompt e retorna (needs_execution, command)
-    
-    Args:
-        prompt: O prompt original do usuário
-        
-    Returns:
-        (True, command) se deve executar automaticamente
-        (False, "") se não há trigger
+    Processa o prompt e retorna (needs_execution, command) usando busca semantica.
     """
     prompt_lower = prompt.lower()
     
-    # 1. Check for Dynamic Triggers (com argumentos)
+    # 1. Busca Semantica de Gatilhos (Alpha v5.2)
+    if HAS_ROUTER:
+        # Buscamos especificamente por agentes/skills que possam ser comandos
+        # Aumentamos n_skills para pegar candidatos a comando
+        retrieval = retrieve_documents(prompt, n_agents=1, n_skills=5, n_code=0)
+        
+        # O motor neural jah rerankeou esses itens no router.
+        # Procuramos por metadados que indiquem uma acao executavel.
+        for skill in retrieval["skills"]:
+            content = skill["content"].lower()
+            # Se o skill contem uma marcacao de comando (ex: `python ...` ou `npx ...`)
+            # e o score neural for alto (> 0.8), assumimos a intencao.
+            if "comando:" in content or "trigger:" in content:
+                # Extraimos o comando entre backticks ou apos o marcador
+                match = re.search(r'(?:comando|trigger):\s*`?([^`\n]+)`?', content)
+                if match:
+                    cmd = match.group(1).strip()
+                    # Validacao Neural Adicional
+                    if skill.get("neural_score", 0) > 0.8:
+                        return True, cmd
+
+    # 2. Check for Dynamic Triggers (Legado)
     for trigger, func in DYNAMIC_TRIGGERS.items():
         if trigger in prompt_lower:
-            # Tenta extrair URL/argumento do prompt
             url = extract_url(prompt)
-            if url:
-                return True, func(url)
-            # Se é tipo que precisa de tipo
-            if "report" in prompt_lower and "full" not in prompt_lower:
-                return True, "/seo google report full"
-            return True, func("")  # Retorna base command
+            if url: return True, func(url)
+            if "report" in prompt_lower: return True, "/seo google report full"
+            return True, func("")
     
-    # 2. Check for Static Triggers
+    # 3. Check for Static Triggers (Fallback)
     for trigger, command in AUTO_TRIGGERS.items():
         if trigger in prompt_lower:
             return True, command
     
-    # 3. Sem trigger - retornar False
     return False, ""
 
 

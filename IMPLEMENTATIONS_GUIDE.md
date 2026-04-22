@@ -1,6 +1,6 @@
-# 🛸 Antigravity v5.1: Guia de Implementações
+# 🛸 Antigravity v5.2: Guia de Implementações
 
-> Documentação completa das novas integrações adicionadas na versão 5.1
+> Documentação completa das novas integrações e da Autonomous Bridge v5.2
 
 ---
 
@@ -234,44 +234,24 @@ Remotion tem licença especial. Uso pessoal = Grátis. Comercial = Pode requerer
 
 ---
 
-## 🎯 Auto-Execution (v5.1)
+## 🎯 Autonomous Bridge (v5.2)
 
-### Como Usar
+### O que é
+A unificação das camadas de Planejamento e Execução. O sistema agora detecta se o usuário quer uma **Ação** ou um **Plano**.
 
-**Método 1: CLI**
-```bash
-python auto_executor_cli.py "make a video"
-python auto_executor_cli.py "run SEO audit on https://example.com"
-python auto_executor_cli.py "I need to debug this bug"
-```
+### Ponto de Entrada Universal: `run.py`
+Substitui o `auto_executor_cli.py` como interface principal.
 
-**Método 2: No Código**
-```python
-from auto_executor_cli import run_auto
-result = run_auto("seu prompt aqui")
-```
+### Reconhecimento de Intenção Semântica
+O Antigravity agora usa busca vetorial + Reranking Neural para identificar comandos, mesmo sem palavras-chave exatas.
 
-**Método 3: Slash Command**
-```
-/auto make a video
-/auto run SEO audit on https://example.com
-```
-
-### Comandos Disponíveis
-
-| Prompt | Comando Executado |
-|--------|-------------------|
-| "make a video" | `npx create-video` |
-| "build video" | `remotion build` |
-| "run SEO audit [url]" | `/seo audit [url]` |
-| "google report" | `/seo google report full` |
-| "debug" | Ativa systematic-debugging |
-| "drift baseline [url]" | `/seo drift baseline [url]` |
-
-### Fonte
-- `auto_executor.py` - Módulo de processamento
-- `auto_executor_cli.py` - Interface CLI
+| Intenção do Usuário | Ação Automática (v5.2) |
+|---------------------|------------------------|
+| "preciso subir para o git" | `python git_sync.py` |
+| "quero fazer uma animação" | `npx create-video` |
+| "audita esse site [url]" | `/seo audit [url]` |
+| "sync" | `python git_sync.py` |
 
 ---
 
-> 🛸 **Antigravity v5.1** - Construído para produtividade sem limites.
+> 🛸 **Antigravity v5.2** - A fronteira final da produtividade autônoma.

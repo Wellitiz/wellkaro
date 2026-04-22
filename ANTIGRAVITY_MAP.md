@@ -1,4 +1,4 @@
-# 🛸 Antigravity v5.1 God Mode: Mapa do Ecossistema
+# 🛸 Antigravity v6.0 Consciência Plena: Mapa do Ecossistema
 
 Este documento fornece a visualização estrutural completa do ecossistema Antigravity, detalhando a função de cada camada e arquivo no sistema.
 
@@ -9,10 +9,13 @@ Este documento fornece a visualização estrutural completa do ecossistema Antig
 ```text
 ANTIGRAVITY_ROOT/
 ├── 🧠 Intelligence & RAG Core ( O Coração )
-│   ├── agent_router.py       # Orquestrador v5 (Neural Reranking + Boosting)
-│   ├── index_skills.py       # Motor de Indexação Híbrida e Multi-Tagging
-│   ├── auto_rag.py           # Planejador Automático e Ativador de Briefings
-│   └── monitor.py             # Painel de Consciência (Monitor Real-time)
+│   ├── agent_router.py       # Orquestrador v6 (Multi-Agent Team Debate)
+│   ├── index_skills.py       # Motor de Indexação Híbrida v4
+│   ├── skill_generator.py    # Universal Expansion (GitHub Import)
+│   ├── auto_rag.py           # Planejador Automático (Context Builder)
+│   ├── auto_executor.py      # Autonomous Bridge
+│   ├── run.py                 # Ponto de Entrada Universal
+│   └── monitor.py             # Monitor de Consciência Real-time
 │
 ├── 📂 Knowledge Base ( Memória Global )
 │   ├── .agent/               # Repositório de 1.300+ Agentes e Skills
@@ -32,8 +35,10 @@ ANTIGRAVITY_ROOT/
 │   │   └── ... (mais 50+ categorias multitag)
 │   └── chroma_db/            # Banco Vetorial (HNSW Index v5)
 │
-├── 🔄 Learning Loop ( Feedback de Longo Prazo )
-│   ├── knowledge_distiller.py # Destilador Autônomo de fix/ki
+├── 🔄 Learning Loop ( Consciência v6.0 )
+│   ├── knowledge_distiller.py # Destilador de Memória
+│   ├── historian.py           # Historiador Autônomo (SESSAO/WALKTHROUGH)
+│   ├── git_sync.py            # Syncer v6.0 (Learn -> Document -> Push)
 │   ├── save_fix.py           # CLI para alimentação manual de memória
 │   ├── .agent/custom-fixes/  # Histórico de soluções técnicas do projeto
 │   └── .agent/local-kis/     # Knowledge Items locais (Regras de Negócio)
@@ -53,7 +58,10 @@ ANTIGRAVITY_ROOT/
 ## 🛠️ Descrição dos Componentes Críticos
 
 ### 1. Camada de Orquestração (`agent_router.py`)
-O sistema nervoso central. Ele decide quaisAgentes e Skills convocar baseando-se na **Query Expansion** (nuances semânticas) e refina a busca usando **Neural Reranking**.
+O sistema nervoso central. Ele decide quais Agentes e Skills convocar baseando-se na **Query Expansion** e refina a busca usando **Neural Reranking (TinyBERT)**.
+
+### 2. Camada de Ação (`auto_executor.py`)
+O motor da **Autonomous Bridge**. Ele usa o ChromaDB para reconhecer intenções semânticas e disparar comandos reais (vídeo, SEO, git) automaticamente.
 
 ### 2. Camada de Consciência (`monitor.py`)
 A interface de transparência. É a única "janela" que permite você observar os pesos, scores neurais e decisões do sistema em tempo real.

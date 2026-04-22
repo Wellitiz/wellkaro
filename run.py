@@ -13,6 +13,7 @@ Executa automaticamente ao iniciar um projeto.
 import sys
 from pathlib import Path
 import auto_rag
+import auto_executor
 
 
 def main():
@@ -34,7 +35,26 @@ def main():
         print("Erro: Briefing vazio")
         sys.exit(1)
 
-    # Executa o planejamento automatico
+    # --- NOVO: Autonomous Bridge v5.2 ---
+    needs_action, command = auto_executor.process(briefing)
+    
+    if needs_action:
+        print("\n" + "!" * 60)
+        print(f">>> GATILHO DETECTADO: {command}")
+        print("!" * 60)
+        print("\nEste briefing parece ser uma acao direta e nao apenas um projeto.")
+        confirm = input(f"Deseja EXECUTAR o comando agora? (s/n): ").lower()
+        
+        if confirm == 's':
+            success, output = auto_executor.execute_command(command)
+            print(f"\n[OUTPUT]:\n{output}")
+            
+            cont = input("\nDeseja prosseguir TAMBEM com o planejamento de RAG? (s/n): ").lower()
+            if cont != 's':
+                print("\nEncerrando Bridge Autônoma. Até logo, Comandante.")
+                sys.exit(0)
+
+    # Executa o planejamento automatico (Fluxo Normal)
     result = auto_rag.auto_plan_and_execute(briefing)
 
     # Exibe resultado formatado
