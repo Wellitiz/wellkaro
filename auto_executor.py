@@ -59,6 +59,8 @@ AUTO_TRIGGERS = {
     "reduce token": "context compression",
     "notebooklm": "notebooklm integration",
     "source grounded": "notebooklm integration",
+    "subir para o git": "python git_sync.py",
+    "git sync": "python git_sync.py",
 }
 
 # Comandos que precisam de argumento adicional
@@ -163,6 +165,17 @@ def execute_command(command: str) -> Tuple[bool, str]:
                 timeout=120
             )
             return True, f"[Remotion Build] {result.stdout[:200]}" if result.stdout else f"[Erro] {result.stderr[:200]}"
+        
+        elif command.startswith("python "):
+            # Comando Python
+            result = subprocess.run(
+                command,
+                shell=True,
+                capture_output=True,
+                text=True,
+                timeout=120
+            )
+            return result.returncode == 0, result.stdout if result.stdout else result.stderr
         
         else:
             return True, f"[Command] {command}"

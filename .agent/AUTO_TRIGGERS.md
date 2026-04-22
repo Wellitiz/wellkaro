@@ -29,6 +29,7 @@
 | "notebook" | NotebookLM queries |
 | "review código" | `@requesting-code-review` |
 | "terminar feature" | `@finishing-a-development-branch` |
+| "subir para o git" | `git_sync.py` → Sincroniza Core v5.1 |
 
 ---
 
