@@ -1,4 +1,4 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.1 (Refinamento de Consciência)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.1 (Antigravity-Welltiz)
 
 Bem-vindo ao **Antigravity v6.1**. Esta versão refina as ferramentas de consciência introduzidas na v6.0, adicionando curadoria técnica para novas habilidades e consulta histórica sob demanda.
 
@@ -58,17 +58,17 @@ A inteligência do orquestrador foi elevada ao nível de diretoria:
 ## 🌐 Integrações Externas v5.1
 
 ### Superpowers (Workflow Methodology)
-- **Origem:** [obra/superpowers](https://github.com/obra/superpowers) (163k ⭐)
+- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
 - **Arquivo:** `.agent/methodology/superpowers/`
 - **Skills:** brainstorming, writing-plans, subagent-driven-dev, test-driven-dev, systematic-debugging
 
 ### Claude SEO Extension (Marketing)
-- **Origem:** [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) (5.3k ⭐)
+- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
 - **Arquivo:** `.agent/marketing/seo/claude-seo-extension/`
 - **Features:** Google APIs, GEO/AEO, drift monitoring
 
 ### Marketing Skills Extension (CRO/Email)
-- **Origem:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (22.8k ⭐)
+- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
 - **Arquivo:** `.agent/marketing/marketing-skills-extension/`
 - **Skills:** Page CRO, Signup CRO, Copywriting, Email sequences
 

@@ -6,29 +6,32 @@ O Antigravity v6.1 agora possui **Curadoria Inteligente** e **Consulta Históric
 
 ## ⚡ Novos Fluxos v6.1
 
-### 1. Curadoria de Repositórios (GitHub Analyze)
-Ao enviar qualquer link do GitHub no prompt, o sistema entrará em **Modo de Curadoria**:
-1.  O sistema detecta a URL.
-2.  Gera um relatório de **Vantagens e Desvantagens** (Pros/Cons).
-3.  Pergunta se você deseja realmente indexar à sua biblioteca.
+### 1. Absorver Tecnologia (Universal Generator)
+Deseja ensinar uma tecnologia nova ao seu Antigravity? Use o gerador automático:
+```bash
+# Sintaxe: python skill_generator.py [URL_GIT] [CATEGORIA]
+python skill_generator.py https://github.com/lucide-react/lucide library
+```
+*O sistema clonará, analisará e criará a documentação de skill em segundos.*
 
-### 2. Consulta Histórica sob Demanda
+### 2. Sincronização Consciente (Auto-Documentation)
+Suba suas alterações para o GitHub com documentação histórica automática:
+```bash
+python git_sync.py
+```
+*Este comando agora roda o **Historian** (gera SESSAO.md/walkthrough.md) e o **Knowledge Distiller** (aprende soluções) antes de cada push.*
+
+---
+
+## 📂 Recapitulativo v6.0 (Consciência Plena)
+
+### 1. Consulta Histórica sob Demanda
 Para saber o estado atual do projeto ou o que foi feito na última sessão:
 ```bash
 python run.py "o que fizemos na sessão anterior?"
 # OU
 python run.py "Analise a sessão anterior"
 ```
-
----
-
-## 📂 Recapitulativo v6.0 (Consciência Plena)
-
-### 1. Sincronização Consciente
-```bash
-python git_sync.py
-```
-*Gera documentação automática e aprende com a sessão antes de subir para o GitHub.*
 
 ### 2. Debate de Elite (Multi-Agent Team)
 Observe o debate entre **CyberGuard**, **NitroStream** e **NexusPrime** em cada resposta no monitor:
