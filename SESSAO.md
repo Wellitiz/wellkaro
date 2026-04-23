@@ -1,3 +1,24 @@
+# 📜 Relatório do Historiano v6.1
+**Data:** 2026-04-23 08:47:00
+
+## 🎯 Atividades Executadas (EC4L CRM)
+- **Integração imersiva da Árvore de Decisão**: Migração e adaptação da LogicTree para o Kanban do CRM.
+- **Modo Tela Cheia (Immersive)**: Transformação do modal da árvore em uma workspace dedicada sem distrações.
+- **Isolamento de Eventos**: Implementação de `stopPropagation` em todos os controles de navegação e minimapa.
+- **Trava de Segurança**: Reset automático do estado da árvore ao abrir cards para evitar ativações fantasmas.
+- **Sincronização Cloud**: Push bem-sucedido para `ec4l-crm` e atualização do repositório core `Antigravity-Welltiz`.
+
+## 🛠️ Mudanças Técnicas (Resumo do Diff)
+```diff
++ [NEW] src/components/Kanban/CardModal/TreeModal.tsx (Full Screen Support)
++ [MOD] src/components/TreeView/LogicTree.tsx (CenterView fix & Padding)
++ [MOD] src/components/Kanban/CardDetailModal.tsx (Safety reset & Logic binding)
+```
+
+---
+> [Auto-Documented by Antigravity v6.1 Historian]
+
+
 # 📜 Relatório do Historiano v6.0
 **Data:** 2026-04-22 12:12:44
 
