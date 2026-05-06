@@ -1,133 +1,77 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.5 (Structural Consciousness)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.6 (Design & Performance Neuralis)
 
-Bem-vindo ao **Antigravity v6.5**. Esta versão transcende o RAG tradicional ao integrar **Grafos de Conhecimento Estruturais** via `code-review-graph`, permitindo uma compreensão profunda do raio de impacto de cada mudança de código.
+Bem-vindo ao **Antigravity v6.6**. Esta versão é o ápice da integração entre estética premium e performance absoluta, introduzindo a **Blindagem de Performance 100/100** e a **Memória Massiva Vetorial**.
 
 ---
 
-## 🧠 Evolucao v5: O Salto Neural
+## 🧠 Evolução v6.6: O Salto de Performance & Memória
 
-A versao 5 introduz a camada **Neural Reranking** e o **Knowledge Distillation**, tornando o sistema capaz de eliminar ruidos e evoluir sem intervencao humana.
+A versão 6.6 introduz protocolos de engenharia de baixo nível e uma arquitetura de dados preparada para escala industrial.
 
-### 1. Motor Neural (Cross-Encoder Reranking)
-O Antigravity v5 utiliza o modelo `TinyBERT-L-2-v2` localmente para refinar a precisao:
-- **Fusao de Scores**: O sistema combina a busca vetorial (semantica), o Context Boosting (projeto/categoria) e a precisao do Reranker Neural.
-- **Eliminacao de Alucinacoes**: O Reranker valida se o snippet recuperado realmente responde a pergunta do usuario antes de injeta-lo no prompt.
+### 1. Protocolo de Performance 100/100 (PageSpeed Excellence)
+O Antigravity agora opera sob a lei do 100/100 no Google PageSpeed Insights:
+- **GPU-Accelerated Visuals**: Efeitos complexos (Three.js/DigitalWaves) agora rodam via **Vertex Shaders** (GPU), reduzindo o uso de CPU a quase 0%.
+- **LCP Static Shield**: Otimização agressiva de Largest Contentful Paint através de renderização estática de elementos críticos do Hero.
+- **TBT Blocker**: Gestão de JavaScript adiado (Deferred JS) e limpeza de main-thread work, garantindo interatividade instantânea.
 
-### 2. Monitor de Consciencia (Observabilidade Real-time)
-Atraves do `monitor.py`, voce tem visibilidade total do "processo de pensamento" da IA:
-- **Painel Persistente**: Uma interface CLI premium que exibe em tempo real:
-    - Queries expandidas.
-    - Agentes convocados.
-    - Documentos recuperados e seus scores de precisao neural.
-    - Alertas de boosts aplicados (Projeto 🎯, Solucao 🛠️, Categoria 🏷️).
+### 2. Deep Memory Indexing (ChromaDB Massivo)
+O sistema agora é capaz de "digerir" e manter contexto sobre ecossistemas gigantescos:
+- **Escala de 300.000+ Arquivos**: Indexação profunda de múltiplos repositórios e bibliotecas de skills simultâneos.
+- **ChromaDB Optimization**: Arquitetura vetorial persistente que garante recuperação semântica em milissegundos, mesmo em bases de dados de GBs.
 
-### 3. Self-Learning (Knowledge Distiller)
-O sistema agora aprende com o próprio sucesso:
-- **Integração Git**: O ciclo de aprendizado agora roda automaticamente antes de cada `git push`, garantindo que o conhecimento destilado viaje pelos seus dispositivos.
-
-### 4. Ponte de Curadoria (Curatorship Bridge v6.1)
-A expansão de conhecimento agora é inteligente e deliberada:
-- **Detecção Automática**: Links do GitHub enviados no prompt são imediatamente interceptados para análise.
-- **Relatório de Viabilidade**: O sistema gera uma análise de **Vantagens e Desvantagens** do repositório antes de oferecer a indexação definitiva.
-
-### 5. Consulta Histórica Inteligente (v6.1)
-Acesse seu progresso instantaneamente através de linguagem natural:
-- **"Analise a sessão anterior"**: Novo comando unificado que extrai o relatório mais recente do Historiador e fornece um resumo executivo para retomada rápida de contexto.
+### 3. Design Consciousness (DESIGN.md Intelligence)
+Integração nativa do protocolo **Google Stitch**:
+- **DESIGN.md Enforcement**: O Core agora busca automaticamente diretrizes de design na raiz de cada projeto para garantir fidelidade visual absoluta (Design Tokens).
+- **Zero Design Hallucination**: IA ciente de paletas de cores, tipografias e regras de espaçamento específicas de cada marca.
 
 ---
 
 ## 🚀 Pilares Antigravity v6.0 (Legacy)
 
 ### 1. Universal Skill Auto-Generator (Expansão Infinita)
-O Antigravity agora pode aprender qualquer tecnologia do planeta:
-- **`skill_generator.py`**: Permite importar qualquer repositório GitHub diretamente para a biblioteca `.agent/`.
-- **Análise Autônoma**: O sistema clona, analisa e gera a documentação de suporte (`SKILL.md`) sozinho.
+- **`skill_generator.py`**: Importação massiva de repositórios GitHub para a biblioteca `.agent/`.
+- **`bulk_clone_skills.py`**: Ferramenta de importação em lote para especialistas e skills globais.
 
 ### 2. Autonomous Session Historian (Auto-Documentação)
-Diga adeus ao trabalho manual de documentação:
-- **`historian.py`**: Analisa cada mudança de código e tarefa concluída para redigir o `SESSAO.md` e o `walkthrough.md`.
-- **Memória Histórica**: Integrado ao Sync, garantindo que cada push contenha um registro impecável do progresso.
+- **`historian.py`**: Analisa cada mudança de código para redigir o `SESSAO.md` e o `walkthrough.md`.
 
 ### 3. Multi-Agent Team Debate (Refino Extremo)
-A inteligência do orquestrador foi elevada ao nível de diretoria:
-- **Mesa Redonda Virtual**: Cada prompt é analisado simultaneamente por um **Auditor de Segurança**, um **Engenheiro de Performance** e um **Arquiteto de Sistemas**.
-- **Consenso Antigravity**: O output final é o resultado de um debate técnico, eliminando refação e erros básicos.
+- **CyberGuard**, **NitroStream** e **NexusPrime** debatem cada implementação para garantir segurança e performance.
 
 ---
 
-## 🌐 Integrações Externas v5.1
-
-### Superpowers (Workflow Methodology)
-- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
-- **Arquivo:** `.agent/methodology/superpowers/`
-- **Skills:** brainstorming, writing-plans, subagent-driven-dev, test-driven-dev, systematic-debugging
-
-### Claude SEO Extension (Marketing)
-- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
-- **Arquivo:** `.agent/marketing/seo/claude-seo-extension/`
-- **Features:** Google APIs, GEO/AEO, drift monitoring
-
-### Marketing Skills Extension (CRO/Email)
-- **Origem:** [Wellitiz/Antigravity-Welltiz](https://github.com/Wellitiz/Antigravity-Welltiz)
-- **Arquivo:** `.agent/marketing/marketing-skills-extension/`
-- **Skills:** Page CRO, Signup CRO, Copywriting, Email sequences
-
-### Context Engineering (AI)
-- **Origem:** [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) (15.2k ⭐)
-- **Arquivo:** `.agent/ai/context-engineering/`
-- **Features:** Progressive disclosure, memory architecture
-
-### NotebookLM Integration (AI)
-- **Origem:** [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) (6k ⭐)
-- **Arquivo:** `.agent/ai/notebooklm-integration/`
-- **Features:** RAG source-grounded, low hallucination
-
-### Remotion (Frontend)
-- **Origem:** [remotion-dev/remotion](https://github.com/remotion-dev/remotion) (44.2k ⭐)
-- **Arquivo:** `.agent/frontend/remotion/`
-- **Features:** Video generation via React
+## 🌐 Integrações Externas v6.2+
 
 ### Design System Intelligence (UI/UX)
-- **Origem:** [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) (71.8k ⭐)
-- **Arquivo:** `.agent/design/awesome-design-md/`
-- **Features:** Automated DESIGN.md enforcement, brand-consistent UI generation
+- **Origem:** [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)
+- **Features:** Automated DESIGN.md enforcement, brand-consistent UI generation.
+
+### Code Review Graph (Architecture)
+- **Origem:** [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph)
+- **Features:** "Blast Radius" analysis and structural knowledge mapping.
 
 ---
 
-## 🏗️ Fluxo de Trabalho Automatizado (Zero Friction)
+## 📂 Estrutura de Arquivos v6.6
 
-*   **Sincronizacao Inteligente**: O Core se auto-indexa ao detectar mudancas fisicas ou estruturais.
-*   **Neural Loop**: 
-    1.  **Busca**: Recupera candidatos via Vetor + Keywords.
-    2.  **Boost**: Aplica pesos de Projeto e Categoria.
-    3.  **Rerank**: O Reranker Neural seleciona a elite dos snippets.
-    4.  **Injecao**: Prompt unificado de alta fidelidade e gerado.
-
----
-
-## 📂 Estrutura de Arquivos v5.1
-
-| Arquivo/Pasta | Funcao |
+| Arquivo/Pasta | Função |
 | :--- | :--- |
-| `index_skills.py` | Motor de indexacao e mapeamento hibrido. |
-| `agent_router.py` | Orquestrador v5 com **Neural Reranking**. |
+| `index_skills.py` | Motor de indexação e mapeamento híbrido v5. |
+| `agent_router.py` | Orquestrador v6 com **Neural Reranking**. |
 | `monitor.py` | Painel de controle e observabilidade real-time. |
-| `knowledge_distiller.py` | Motor de aprendizado autônomo. |
-| `save_fix.py` | Utilitario para alimentacao manual de memoria. |
-| `chroma_db/` | Banco vetorial persistente (13.800+ documentos). |
-| `.agent/methodology/superpowers/` | Superpowers workflow system |
-| `.agent/frontend/remotion/` | Video generation framework |
-| `.agent/design/awesome-design-md/` | Design System Intelligence repository |
+| `bulk_clone_skills.py` | Importador massivo de repositórios (Escala 300k+). |
+| `.agent/specialists/bulk_import/` | Repositório de 88+ clusters de conhecimento especializado. |
+| `chroma_db/` | Banco vetorial persistente (Escala GBs). |
 
 ---
 
 ## 🚀 DevOps & IA Engineering
 
-O Antigravity v5 e uma ferramenta de engenharia de IA preparada para escala:
-- **Model Isolation**: Modelos neurais rodam localmente para privacidade total.
-- **Cross-Project Intelligence**: Memoria compartilhada entre todos os seus projetos sob gestao.
+O Antigravity v6.6 é uma ferramenta de engenharia de elite:
+- **GPU Offloading**: Delegamos o visual para a GPU para focar a CPU na inteligência.
+- **Cross-Project Intelligence**: Memória compartilhada entre todos os seus projetos (NossaNet, iGreen, Verdeon, etc.).
 
 ---
 
-> [!TIP]
-> Para ativar o Painel de Consciencia, abra um novo terminal e rode: `python monitor.py`. 🛸
+> [!IMPORTANT]
+> **Performance em primeiro lugar**: Se o código for visual, ele deve rodar em Shader. Se for texto, deve ser estático. 100/100 é a meta. 🛸

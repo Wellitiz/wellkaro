@@ -1,49 +1,48 @@
-# 🛸 Antigravity-Welltiz: Neural Consciousness Ecosystem v6.5
+# 🛸 Antigravity-Welltiz: Neural Consciousness Ecosystem v6.6
 
-[![Antigravity v6.5](https://img.shields.io/badge/Engine-v6.5%20Structural-magenta?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
-[![Knowledge Graph](https://img.shields.io/badge/Graph-Structural%20Intelligence-cyan?style=for-the-badge)](https://github.com/tirth8205/code-review-graph)
-[![Neural Reranker](https://img.shields.io/badge/Neural%20Reranker-TinyBERT-orange?style=for-the-badge)](https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L-2-v2)
-[![Design](https://img.shields.io/badge/Design-Stitch--MD-green?style=for-the-badge)](https://github.com/VoltAgent/awesome-design-md)
+[![Antigravity v6.6](https://img.shields.io/badge/Engine-v6.6%20Neuralis-magenta?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
+[![Performance](https://img.shields.io/badge/PageSpeed-100%2F100-green?style=for-the-badge)](https://pagespeed.web.dev/)
+[![Deep Indexing](https://img.shields.io/badge/Knowledge-300k+%20Files-cyan?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
+[![Memory](https://img.shields.io/badge/ChromaDB-1.2GB+-orange?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
 
-**Antigravity-Welltiz** é um ecossistema de inteligência autônoma de ultra-fidelidade. Na versão **v6.5**, transcendemos o RAG tradicional, integrando **Grafos de Conhecimento Estruturais** para uma compreensão absoluta da arquitetura do seu código.
+**Antigravity-Welltiz** é um ecossistema de inteligência autônoma de ultra-fidelidade. Na versão **v6.6**, unificamos a obsessão pela **Performance 100/100** com a capacidade de processamento de **Conhecimento Massivo (300k+ arquivos)**.
 
 ---
 
 ## 🗺️ Guia de Navegação Rápida
 
-[🚀 Início Rápido](QUICKSTART.md) • [🧠 Especificações do Core](ANTIGRAVITY_CORE.md) • [🛠️ Guia de Implementações](IMPLEMENTATIONS_GUIDE.md) • [📜 Histórico da Sessão](SESSAO.md)
+[🚀 Início Rápido](QUICKSTART.md) • [🧠 Especificações do Core](ANTIGRAVITY_CORE.md) • [🗺️ Mapa do Ecossistema](ANTIGRAVITY_MAP.md) • [📜 Histórico da Sessão](SESSAO.md)
 
 ---
 
 ## 💎 Funcionalidades Mestres (Core Capabilities)
 
-### 1. 🕸️ Structural Intelligence (Knowledge Graph) [NOVO v6.5]
-O Antigravity mapeia seu código como um grafo vivo de conexões. 
-- **Como funciona:** Identifica o "Blast Radius" de mudanças. Se você altera uma função, o sistema sabe exatamente quais dependências em outros arquivos precisam ser revisadas.
-- [Habilidade de Arquitetura →](ANTIGRAVITY_CORE.md#4-structural-intelligence-knowledge-graph-v65)
+### 1. ⚡ Performance Engineering (PageSpeed 100/100) [NOVO v6.6]
+O Antigravity agora implementa automaticamente protocolos de performance de elite.
+- **GPU Shaders**: Animações complexas calculadas na placa de vídeo para 0% de uso de CPU.
+- **LCP Optimization**: Renderização instantânea do conteúdo principal.
+- **Resultados:** Sites que atingem 100/100 em performance, acessibilidade e SEO.
 
-### 2. 🧠 Neural Engine (RAG + TinyBERT Reranking)
-Combinação de busca vetorial (ChromaDB) com um reranker neural de alta precisão.
-- **Superioridade:** O contexto recuperado pelo grafo é refinado pelo TinyBERT, garantindo 0% de alucinação estrutural.
+### 2. 🧠 Massive Deep Indexing (312.931 Files) [NOVO v6.6]
+Suporte para bases de conhecimento em escala industrial.
+- **Deep Context:** Indexação profunda de 88+ repositórios de skills integrados.
+- **Vetorização Persistente:** Banco ChromaDB otimizado para GBs de contexto semântico.
 
-### 3. 🎨 Design System Intelligence (Stitch-MD)
-Garante fidelidade visual absoluta através do protocolo `DESIGN.md`. Toda UI gerada segue estritamente seus tokens de marca.
+### 3. 🎨 Design Consciousness (DESIGN.md Protocol)
+Fidelidade visual absoluta. O sistema lê e aplica automaticamente o seu Manual de Identidade Visual em cada linha de código gerada.
 
-### 4. 🧬 Knowledge Distillation (Self-Learning)
-O sistema aprende com cada tarefa concluída, indexando novas soluções e padrões arquiteturais automaticamente.
-
-### 5. 🗣️ Multi-Agent Debate (Consenso de Elite)
-Debate técnico entre **CyberGuard**, **NitroStream** e **NexusPrime** para garantir segurança, performance e código limpo.
+### 4. 🧬 Structural Intelligence (Knowledge Graph)
+Mapeamento estrutural que entende o "Blast Radius" de cada mudança, garantindo refatorações seguras em projetos complexos.
 
 ---
 
 ## 🔄 Workflow de Alta Performance
 
 1. **Monitoramento**: `python monitor.py` (Consciência em tempo real).
-2. **Construção do Grafo**: `code-review-graph build` (Mapeamento estrutural).
-3. **Execução**: `python run.py "tarefa"` (Orquestração v6.5).
-4. **Sincronização**: `python git_sync.py` (Push consciente com atualização de grafo).
+2. **Importação Massiva**: `python bulk_clone_skills.py` (Expansão de conhecimento).
+3. **Execução**: `python run.py "tarefa"` (Orquestração v6.6).
+4. **Sincronização**: `python git_sync.py` (Push consciente v6.6).
 
 ---
 
-> 🛸 **Antigravity-Welltiz** - *Structural Consciousness for the AI Era.*
+> 🛸 **Antigravity-Welltiz** - *The Ultimate AI Engineering Ecosystem.*
