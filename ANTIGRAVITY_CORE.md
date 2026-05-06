@@ -1,6 +1,6 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.2 (Antigravity-Welltiz)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.5 (Structural Consciousness)
 
-Bem-vindo ao **Antigravity v6.2**. Esta versão introduz o **Design System Intelligence**, garantindo que toda UI gerada siga protocolos estritos de marca via `DESIGN.md`.
+Bem-vindo ao **Antigravity v6.5**. Esta versão transcende o RAG tradicional ao integrar **Grafos de Conhecimento Estruturais** via `code-review-graph`, permitindo uma compreensão profunda do raio de impacto de cada mudança de código.
 
 ---
 

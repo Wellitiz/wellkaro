@@ -1,48 +1,40 @@
-# 🛸 Antigravity v6.2: QuickStart (Estética & Consciência)
+# 🛸 Antigravity v6.5: QuickStart (Structural Consciousness)
 
-O Antigravity v6.2 agora possui **Design System Intelligence** via protocolo `DESIGN.md`.
+O Antigravity v6.5 introduz a **Inteligência de Grafo**, permitindo que o sistema entenda a arquitetura profunda do seu código.
 
 ---
 
-## ⚡ Novos Fluxos v6.2
+## ⚡ Fluxos Principais v6.5
 
-### 1. Absorver Tecnologia (Universal Generator)
-Deseja ensinar uma tecnologia nova ao seu Antigravity? Use o gerador automático:
+### 1. Mapeamento Estrutural (Knowledge Graph)
+Antes de começar grandes alterações, construa o mapa do seu projeto:
 ```bash
-# Sintaxe: python skill_generator.py [URL_GIT] [CATEGORIA]
-python skill_generator.py https://github.com/lucide-react/lucide library
+# Constrói o grafo de conexões do código
+code-review-graph build
 ```
-*O sistema clonará, analisará e criará a documentação de skill em segundos.*
 
-### 2. Design Intelligence Protocol (v6.2)
-O Antigravity agora busca automaticamente um arquivo `DESIGN.md` na raiz do seu projeto:
-- **Zero Config**: Se não existir, o sistema cria um baseado na estética do projeto.
-- **Pixel-Perfect**: Toda geração de UI será baseada nos tokens definidos no `DESIGN.md`.
+### 2. Design Intelligence Protocol (DESIGN.md)
+O Antigravity busca o `DESIGN.md` para garantir consistência visual.
+- Se não existir, ele cria um automaticamente.
+- Toda geração de UI segue esses tokens.
 
-### 3. Sincronização Consciente (Auto-Documentation)
-Suba suas alterações para o GitHub com documentação histórica automática:
+### 3. Sincronização e Aprendizado (Neural Push)
+Ao finalizar, sincronize tudo:
 ```bash
 python git_sync.py
 ```
-*Este comando agora roda o **Historian** (gera SESSAO.md/walkthrough.md) e o **Knowledge Distiller** (aprende soluções) antes de cada push.*
+*Este comando atualiza o grafo, distila conhecimento e documenta a sessão antes de subir para o GitHub.*
 
 ---
 
-## 📂 Recapitulativo v6.0 (Consciência Plena)
+## 🧠 Comandos de Inteligência
 
-### 1. Consulta Histórica sob Demanda
-Para saber o estado atual do projeto ou o que foi feito na última sessão:
-```bash
-python run.py "o que fizemos na sessão anterior?"
-# OU
-python run.py "Analise a sessão anterior"
-```
-
-### 2. Debate de Elite (Multi-Agent Team)
-Observe o debate entre **CyberGuard**, **NitroStream** e **NexusPrime** em cada resposta no monitor:
-```bash
-python monitor.py
-```
+| Comando | Função |
+|---------|--------|
+| `python run.py "tarefa"` | Inicia o orquestrador neural |
+| `code-review-graph status` | Mostra estatísticas do grafo de código |
+| `code-review-graph visualize` | Gera mapa visual da arquitetura |
+| `python monitor.py` | Monitora o debate entre agentes |
 
 ---
-> 🛸 **Antigravity v6.2** - Consciência Refinada. Design Inteligente.
+> 🛸 **Antigravity v6.5** - Inteligência Estrutural. Precisão Absoluta.

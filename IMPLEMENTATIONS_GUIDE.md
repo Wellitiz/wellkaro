@@ -241,6 +241,12 @@ O Antigravity agora usa busca vetorial + Reranking Neural para identificar coman
 | "quero fazer uma animação" | `npx create-video` |
 | "audita esse site [url]" | `/seo audit [url]` |
 | "sync" | `python git_sync.py` |
+| "texto de alta performance" | Ativa Skill Pretext |
+
+### 8. High-Performance Text (Pretext) [NEW v6.2]
+- **O que é**: Biblioteca para medição de texto sem DOM reflow.
+- **Localização**: `.agent/frontend/pretext/`
+- **Uso Automático**: Ativado em virtualização de listas, dashboards e prevenção de layout shift.
 
 ---
 
