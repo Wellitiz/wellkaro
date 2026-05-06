@@ -16,11 +16,21 @@ Integração total de 10 repositórios fundamentais para maestria em Claude Code
 - **Toolkit** (Scripts utilitários)
 - **Learn** (Dataset de treinamento neural)
 
-### 2. Otimização Arquitetural ✅
+### 2. Otimização de Performance UI ✅
+- **Pretext Integration**: Adição da skill de medição de texto de alta performance para evitar reflows.
+
+### 3. Industry Standards & Design Extensions ✅
+- **Anthropic Frontend**: Padrões oficiais de design integrados.
+- **Vercel Guidelines**: Diretrizes de performance e web design.
+- **UI Animation**: Especialização em micro-interações fluidas.
+- **Figma Bridge**: Infraestrutura para tradução design-to-code via MCP.
+- **Frontend Slides**: Capacidade de geração de apresentações técnicas.
+
+### 4. Otimização Arquitetural ✅
 - **Unificação Metodológica**: Criação da pasta `.agent/methodology/claude-code-suite/` para centralizar o conhecimento.
 - **Indexação Vetorial**: Todos os 10 repositórios foram indexados no motor de busca semântica.
 
-### 3. Sincronização de Mapas ✅
+### 5. Sincronização de Mapas ✅
 - **Antigravity Map v6.5**: Atualizado com a nova Suite Master e numeração corrigida.
 - **GitHub Push**: Todo o novo conhecimento metodológico foi sincronizado com o repositório central.
 

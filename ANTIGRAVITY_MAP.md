@@ -29,7 +29,8 @@ ANTIGRAVITY_ROOT/
 │   │   │   ├── impeccable/   # AI Design Language
 │   │   │   ├── huashu-design/# Advanced Prototyping
 │   │   │   ├── ui-ux-pro-max/# Multi-platform UI/UX
-│   │   │   └── taste-skill/  # Anti-slop guardian
+│   │   │   ├── taste-skill/  # Anti-slop guardian
+│   │   │   └── skills-extension/ # Industry Standards (Anthropic, Vercel, Figma)
 │   │   ├── architecture/     # System design and code mapping
 │   │   │   └── code-review-graph/ # Knowledge Graph [v6.5]
 │   │   ├── automation/       # Autonomous Action & Testing
@@ -179,6 +180,7 @@ Video generation via React:
 - **Huashu-Design**: Filosofia e revisão de UI em 5 dimensões.
 - **UI/UX Pro Max**: Padrões profissionais multi-plataforma.
 - **Taste-Skill**: Filtro obrigatório de refinamento estético anti-slop.
+- **Industry Extensions**: Anthropic (Frontend Standards), Vercel (Performance Design), Figma (Design-to-Code Bridge), Mblode (UI Animation), Zarazhangrui (HTML Slides).
 
 ### 11. Playwright (Automation)
 **Origem:** [microsoft/playwright](https://github.com/microsoft/playwright) | **Status:** Infraestrutura v7.0
