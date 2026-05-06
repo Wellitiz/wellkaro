@@ -5,82 +5,66 @@
 [![Model](https://img.shields.io/badge/Neural%20Reranker-TinyBERT-orange?style=for-the-badge)](https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L-2-v2)
 [![Design](https://img.shields.io/badge/Design-Stitch--MD-green?style=for-the-badge)](https://github.com/VoltAgent/awesome-design-md)
 
-**Antigravity-Welltiz** é um ecossistema de inteligência autônoma de ultra-fidelidade, projetado para transcender a automação convencional através de recuperação semântica profunda, reranking neural e ciclos de aprendizado contínuo.
+**Antigravity-Welltiz** é um ecossistema de inteligência autônoma de ultra-fidelidade. Ele não apenas executa tarefas, mas entende contextos, aprende com cada interação e mantém uma consciência contínua do seu stack tecnológico.
 
 ---
 
-## 🧠 The Neural Engine (Engenharia de Elite)
+## 🗺️ Guia de Navegação Rápida
 
-O coração do Antigravity não é apenas um script, mas um pipeline de processamento de linguagem natural (NLP) multi-camadas:
-
-### 1. Camada de Vetorização (ChromaDB)
-Utilizamos o **ChromaDB** como nossa memória de longo prazo. Cada uma das 1.300+ habilidades e fragmentos de código é processado e armazenado como um embedding vetorial em um espaço n-dimensional.
-- **RAG (Retrieval-Augmented Generation)**: Quando você faz um prompt, o sistema realiza uma busca de vizinhos mais próximos (KNN) para recuperar o contexto mais relevante instantaneamente.
-
-### 2. Reranking Neural (TinyBERT Cross-Encoder)
-A busca vetorial por si só pode ser imprecisa. Para garantir fidelidade de 100%, implementamos o modelo **Cross-Encoder TinyBERT-L-2-v2**:
-- **Pente Fino**: O sistema recupera os top 10 candidatos do ChromaDB e os submete ao TinyBERT.
-- **Scoring Neural**: O modelo analisa a relação semântica exata entre sua pergunta e o conteúdo recuperado, reordenando-os por relevância lógica real, eliminando alucinações.
-
-### 3. Context Boosting Protocol
-Aplicamos pesos dinâmicos baseados no estado do sistema:
-- **🎯 Project Boost (1.5x)**: Prioriza arquivos do repositório em que você está trabalhando.
-- **🛠️ Solution Boost (1.3x)**: Prioriza correções técnicas e lições aprendidas anteriormente.
-- **🏷️ Category Boost (1.2x)**: Prioriza domínios de conhecimento específicos detectados no prompt.
+[🚀 Início Rápido](QUICKSTART.md) • [🧠 Especificações do Core](ANTIGRAVITY_CORE.md) • [🛠️ Guia de Implementações](IMPLEMENTATIONS_GUIDE.md) • [📜 Histórico da Sessão](SESSAO.md)
 
 ---
 
-## 🔄 The Consciousness Loop (v6.1 Workflow)
+## 💎 Funcionalidades Principais (Core Features)
 
-O Antigravity-Welltiz opera em um ciclo fechado de inteligência:
+### 1. 🧠 Neural Engine (RAG + Reranking)
+O cérebro do sistema utiliza **ChromaDB** para memória de longo prazo e um modelo **TinyBERT Cross-Encoder** para garantir 100% de precisão semântica.
+- **Como funciona:** O sistema recupera contexto via vetores e faz um "rerank" neural para eliminar qualquer alucinação antes de gerar código.
+- [Detalhes técnicos no Core →](ANTIGRAVITY_CORE.md#1-motor-neural-cross-encoder-reranking)
 
-1.  **Observação**: O `monitor.py` visualiza cada etapa do pensamento da IA.
-2.  **Debate (Multi-Agent Debate)**: Três especialistas (**CyberGuard**, **NitroStream**, **NexusPrime**) debatem a melhor implementação técnica.
-3.  **Execução**: O `run.py` (Ponte Autônoma) decide o comando ideal ou plano a seguir.
-4.  **Aprendizado (Knowledge Distiller)**: Ao final da tarefa, o sistema extrai o conhecimento fixo e o destila em arquivos de memória.
-5.  **Design Intelligence**: O sistema agora exige e adere ao protocolo `DESIGN.md` para garantir UI/UX premium constante.
-6.  **Documentação (Historian)**: O sistema redige automaticamente o progresso em `SESSAO.md`.
-7.  **Persistência (Git Sync)**: Tudo é versionado e sincronizado via `git_sync.py`.
+### 2. 🏗️ Autonomous Bridge (The Entry Point)
+Através do `run.py`, o Antigravity unifica planejamento e execução. Ele decide autonomamente se deve criar um plano, executar um comando ou debater uma arquitetura.
+- **Como funciona:** Interpretação de intenção semântica que mapeia prompts naturais para ações complexas no sistema.
+
+### 3. 🎨 Design System Intelligence (v6.2)
+Integração nativa com o protocolo **DESIGN.md** (Stitch). O sistema garante que toda UI gerada seja fiel aos tokens de design (cores, fontes, animações) do seu projeto.
+- **Como funciona:** Se um `DESIGN.md` existe, ele é a lei. Se não, o sistema o gera autonomamente analisando seus arquivos CSS.
+- [Guia de Estética →](IMPLEMENTATIONS_GUIDE.md#7-design-system-intelligence)
+
+### 4. 🧬 Knowledge Distillation (Self-Learning)
+O Antigravity aprende com o próprio sucesso e erros. Cada solução técnica aplicada é destilada e gravada na memória persistente.
+- **Como funciona:** O `knowledge_distiller.py` extrai "lições aprendidas" ao final de cada tarefa e as indexa no banco vetorial.
+
+### 5. 🗣️ Multi-Agent Team Debate
+Toda decisão técnica passa por um colegiado de agentes especialistas: **CyberGuard** (Segurança), **NitroStream** (Performance) e **NexusPrime** (Arquitetura).
+- **Como funciona:** Um debate em "mesa redonda" virtual que garante o melhor output técnico possível, eliminando refação.
+
+### 6. ⚡ Skill Auto-Generator
+O ecossistema pode aprender qualquer tecnologia nova em segundos através da clonagem e análise autônoma de repositórios.
+- **Como funciona:** O `skill_generator.py` ingere documentação bruta e a transforma em uma "Skill" utilizável pelo agente.
+
+### 7. 📜 Autonomous Historian
+Documentação que se escreve sozinha. O sistema mantém um registro impecável de cada mudança física e decisão lógica.
+- **Como funciona:** O `historian.py` monitora o diff do código e redige automaticamente o `SESSAO.md` e o `walkthrough.md`.
 
 ---
 
-## 📂 Project Architecture
+## 🔄 Fluxo de Trabalho (The Consciousness Loop)
+
+1. **Monitoramento**: `python monitor.py` exibe o processo de pensamento em tempo real.
+2. **Execução**: `python run.py "sua tarefa"` inicia o pipeline neural.
+3. **Sincronização**: `python git_sync.py` destila conhecimento, gera documentação e faz o push consciente.
+
+---
+
+## 📂 Arquitetura do Ecossistema
 
 ```text
 ANTIGRAVITY_WELLTIZ/
-├── 🧠 Intelligence Core
-│   ├── agent_router.py       # Orquestrador Neural (TinyBERT + ChromaDB Link)
-│   ├── auto_executor.py      # Motor de Intenção e Gatilhos Semânticos
-│   ├── run.py                 # Ponto de Entrada Universal (The Bridge)
-│   └── index_skills.py        # Pipeline de Embedding e Indexação Vetorial
-├── 🔄 Learning & Persistence
-│   ├── historian.py           # Gerador de Documentação Autônoma
-│   ├── knowledge_distiller.py  # Extração de Lições Aprendidas
-│   └── git_sync.py             # Sincronização Consciente v6.1
-├── 📂 Neural Library (Cognição)
-│   ├── .agent/                # Repositório de Agentes e Skills (1.300+ itens)
-│   └── chroma_db/             # Database Vetorial Persistente
-└── 📜 Documentation Elite
-    ├── README.md              # Documentação Técnica Mestre
-    ├── ANTIGRAVITY_CORE.md    # Especificação do Ecossistema
-    └── QUICKSTART.md          # Guia de Ativação Rápida
-```
-
----
-
-## ⚡ Setup de Alta Performance
-
-```bash
-# 1. Clone & Entra
-git clone https://github.com/Wellitiz/Antigravity-Welltiz.git
-cd Antigravity-Welltiz
-
-# 2. Dependências Neurais
-pip install chromadb sentence-transformers rich
-
-# 3. Ativação
-python monitor.py  # Em um terminal dedicado
-python run.py "sua tarefa de engenharia"
+├── 🧠 Intelligence Core    # Orquestradores, Rerankers e RAG
+├── 🔄 Neural Loop          # Scripts de Aprendizado e Sincronia
+├── 📂 Neural Library       # .agent/ (1.300+ Skills e Agentes)
+└── 📜 Documentation        # README, CORE, QUICKSTART, GUIDE
 ```
 
 ---
