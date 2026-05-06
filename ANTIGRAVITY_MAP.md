@@ -1,4 +1,4 @@
-# 🛸 Antigravity v6.0 Consciência Plena: Mapa do Ecossistema
+# 🛸 Antigravity v6.5 Structural Consciousness: Mapa do Ecossistema
 
 Este documento fornece a visualização estrutural completa do ecossistema Antigravity, detalhando a função de cada camada e arquivo no sistema.
 
@@ -23,7 +23,10 @@ ANTIGRAVITY_ROOT/
 │   │   │   ├── context-agent/       # Context management
 │   │   │   └── notebooklm-integration/ # NotebookLM RAG integration
 │   │   ├── frontend/         # React, Next.js, UI/UX, CSS, Tailwind
-│   │   │   └── remotion/    # Video generation via React
+│   │   │   ├── remotion/    # Video generation via React
+│   │   │   └── pretext/     # High-performance text layout [v6.2]
+│   │   ├── architecture/     # System design and code mapping
+│   │   │   └── code-review-graph/ # Knowledge Graph [v6.5]
 │   │   ├── backend/          # Node, Python, Databases, APIs
 │   │   ├── security/         # Auditoria, Auth, Proteção, Pentest
 │   │   ├── marketing/        # SEO, Content, CRO, Copywriting
@@ -137,6 +140,17 @@ Video generation via React:
 - `/remotion dev` - Development server
 - `/remotion build` - Build vídeo
 - Templates: intro, social, presentation, logo
+
+### 7. Pretext (Frontend/Performance)
+**Origem:** [chenglou/pretext](https://github.com/chenglou/pretext) | **Stars:** 46.3k ⭐
+- Medição de texto sem DOM reflow.
+- Alta performance em listas virtualizadas.
+
+### 8. Code Review Graph (Architecture)
+**Origem:** [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | **Stars:** 15.5k ⭐
+- Mapa estrutural do código via Tree-sitter.
+- Análise de "Blast Radius" para refatorações seguras.
+- Integração nativa com MCP e Antigravity Neural Engine.
 
 ---
 
