@@ -241,13 +241,29 @@ O Antigravity agora usa busca vetorial + Reranking Neural para identificar coman
 | "quero fazer uma animação" | `npx create-video` |
 | "audita esse site [url]" | `/seo audit [url]` |
 | "sync" | `python git_sync.py` |
-| "texto de alta performance" | Ativa Skill Pretext |
+| "raio de impacto" | `code-review-graph detect-changes` |
+| "bom gosto" | Ativa Skill Taste-Skill (Anti-Slop) |
+| "testa o site" | `npx playwright test` |
 
 ### 8. High-Performance Text (Pretext) [NEW v6.2]
 - **O que é**: Biblioteca para medição de texto sem DOM reflow.
 - **Localização**: `.agent/frontend/pretext/`
 - **Uso Automático**: Ativado em virtualização de listas, dashboards e prevenção de layout shift.
 
+### 9. Structural Intelligence (Graph) [v6.5]
+- **O que é**: Grafo de conhecimento estrutural do código (Tree-sitter).
+- **Localização**: `.agent/architecture/code-review-graph/`
+
+### 10. The Pentagon of Perfection (Design) [v6.5]
+- **Skills**: Impeccable, Huashu-Design, UI/UX Pro Max, Taste-Skill.
+- **Localização**: `.agent/design/`
+- **Uso**: Refinamento estético e filosofia de design premium.
+
+### 11. Autonomous Automation (Playwright) [v7.0 Base]
+- **O que é**: Automação industrial de browser.
+- **Localização**: `.agent/automation/playwright/`
+- **Uso Automático**: Ativado em virtualização de listas, dashboards e prevenção de layout shift.
+
 ---
 
-> 🛸 **Antigravity v6.2** - A fronteira final da produtividade autônoma.
+> 🛸 **Antigravity v6.5** - A fronteira final da produtividade autônoma.

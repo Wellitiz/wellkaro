@@ -25,8 +25,15 @@ ANTIGRAVITY_ROOT/
 │   │   ├── frontend/         # React, Next.js, UI/UX, CSS, Tailwind
 │   │   │   ├── remotion/    # Video generation via React
 │   │   │   └── pretext/     # High-performance text layout [v6.2]
+│   │   ├── design/           # Design Intelligence (Pentagon of Perfection)
+│   │   │   ├── impeccable/   # AI Design Language
+│   │   │   ├── huashu-design/# Advanced Prototyping
+│   │   │   ├── ui-ux-pro-max/# Multi-platform UI/UX
+│   │   │   └── taste-skill/  # Anti-slop guardian
 │   │   ├── architecture/     # System design and code mapping
 │   │   │   └── code-review-graph/ # Knowledge Graph [v6.5]
+│   │   ├── automation/       # Autonomous Action & Testing
+│   │   │   └── playwright/   # Browser automation [v7.0 base]
 │   │   ├── backend/          # Node, Python, Databases, APIs
 │   │   ├── security/         # Auditoria, Auth, Proteção, Pentest
 │   │   ├── marketing/        # SEO, Content, CRO, Copywriting
@@ -151,6 +158,18 @@ Video generation via React:
 - Mapa estrutural do código via Tree-sitter.
 - Análise de "Blast Radius" para refatorações seguras.
 - Integração nativa com MCP e Antigravity Neural Engine.
+
+### 9. The Pentagon of Perfection (Design & Taste)
+**Origem:** [Multi-repo] | **Status:** Ativo v6.5
+- **Impeccable**: Compilação de intenção de design para IA.
+- **Huashu-Design**: Filosofia e revisão de UI em 5 dimensões.
+- **UI/UX Pro Max**: Padrões profissionais multi-plataforma.
+- **Taste-Skill**: Filtro obrigatório de refinamento estético anti-slop.
+
+### 10. Playwright (Automation)
+**Origem:** [microsoft/playwright](https://github.com/microsoft/playwright) | **Status:** Infraestrutura v7.0
+- Automação industrial para auditoria de UI e testes visuais.
+- Base para o futuro motor de "Auto-Cura" (Auto-Healing).
 
 ---
 
