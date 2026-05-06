@@ -41,7 +41,8 @@ ANTIGRAVITY_ROOT/
 │   │   │   ├── seo/claude-seo-extension/  # Google APIs, GEO
 │   │   │   └── marketing-skills-extension/  # CRO, Email, Analytics
 │   │   ├── methodology/      # Workflow systems
-│   │   │   └── superpowers/  # Superpowers agentic workflow
+│   │   │   ├── superpowers/  # Superpowers agentic workflow
+│   │   │   └── claude-code-suite/ # Master Suite (10 repos) [v6.5]
 │   │   └── ... (mais 50+ categorias multitag)
 │   └── chroma_db/            # Banco Vetorial (HNSW Index v5)
 │
@@ -148,25 +149,38 @@ Video generation via React:
 - `/remotion build` - Build vídeo
 - Templates: intro, social, presentation, logo
 
-### 7. Pretext (Frontend/Performance)
+### 7. Claude Code Master Suite (Methodology)
+**Origem:** [Multi-repo] | **Status:** Absorvido v6.5
+- **Everything**: Índice global de recursos.
+- **Awesome-List**: Curadoria de ferramentas de elite.
+- **Ultimate-Guide**: Manual de maestria operacional.
+- **GSD**: Metodologia de entrega rápida (Spec-Driven).
+- **Subagents**: Biblioteca de 100+ especialistas.
+- **Templates**: Boilerplates otimizados.
+- **Official-Core**: Documentação técnica da Anthropic.
+- **Skills**: Repositório de habilidades .md.
+- **Toolkit**: Ferramentas e scripts de workflow.
+- **Learn**: Dataset de treinamento e educação.
+
+### 8. Pretext (Frontend/Performance)
 **Origem:** [chenglou/pretext](https://github.com/chenglou/pretext) | **Stars:** 46.3k ⭐
 - Medição de texto sem DOM reflow.
 - Alta performance em listas virtualizadas.
 
-### 8. Code Review Graph (Architecture)
+### 9. Code Review Graph (Architecture)
 **Origem:** [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | **Stars:** 15.5k ⭐
 - Mapa estrutural do código via Tree-sitter.
 - Análise de "Blast Radius" para refatorações seguras.
 - Integração nativa com MCP e Antigravity Neural Engine.
 
-### 9. The Pentagon of Perfection (Design & Taste)
+### 10. The Pentagon of Perfection (Design & Taste)
 **Origem:** [Multi-repo] | **Status:** Ativo v6.5
 - **Impeccable**: Compilação de intenção de design para IA.
 - **Huashu-Design**: Filosofia e revisão de UI em 5 dimensões.
 - **UI/UX Pro Max**: Padrões profissionais multi-plataforma.
 - **Taste-Skill**: Filtro obrigatório de refinamento estético anti-slop.
 
-### 10. Playwright (Automation)
+### 11. Playwright (Automation)
 **Origem:** [microsoft/playwright](https://github.com/microsoft/playwright) | **Status:** Infraestrutura v7.0
 - Automação industrial para auditoria de UI e testes visuais.
 - Base para o futuro motor de "Auto-Cura" (Auto-Healing).
