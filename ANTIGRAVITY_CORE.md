@@ -9,7 +9,7 @@ Bem-vindo ao **Antigravity v6.6**. Esta versão é o ápice da integração entr
 A versão 6.6 introduz protocolos de engenharia de baixo nível e uma arquitetura de dados preparada para escala industrial.
 
 ### 1. Protocolo de Performance 100/100 (PageSpeed Excellence)
-O Antigravity agora opera sob a lei do 100/100 no Google PageSpeed Insights:
+O Antigravity agora opera sob a lei do 100/100 no Google PageSpeed Insights, seguindo o **[PEP v1.0](C:\Users\welli\.gemini\antigravity\knowledge\performance_excellence_protocol\artifacts\protocol.md)**:
 - **GPU-Accelerated Visuals**: Efeitos complexos (Three.js/DigitalWaves) agora rodam via **Vertex Shaders** (GPU), reduzindo o uso de CPU a quase 0%.
 - **LCP Static Shield**: Otimização agressiva de Largest Contentful Paint através de renderização estática de elementos críticos do Hero.
 - **TBT Blocker**: Gestão de JavaScript adiado (Deferred JS) e limpeza de main-thread work, garantindo interatividade instantânea.
