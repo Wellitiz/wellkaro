@@ -1,10 +1,10 @@
-# 🛸 Antigravity v6.1: QuickStart (Refinamento de Consciência)
+# 🛸 Antigravity v6.2: QuickStart (Estética & Consciência)
 
-O Antigravity v6.1 agora possui **Curadoria Inteligente** e **Consulta Histórica**.
+O Antigravity v6.2 agora possui **Design System Intelligence** via protocolo `DESIGN.md`.
 
 ---
 
-## ⚡ Novos Fluxos v6.1
+## ⚡ Novos Fluxos v6.2
 
 ### 1. Absorver Tecnologia (Universal Generator)
 Deseja ensinar uma tecnologia nova ao seu Antigravity? Use o gerador automático:
@@ -14,7 +14,12 @@ python skill_generator.py https://github.com/lucide-react/lucide library
 ```
 *O sistema clonará, analisará e criará a documentação de skill em segundos.*
 
-### 2. Sincronização Consciente (Auto-Documentation)
+### 2. Design Intelligence Protocol (v6.2)
+O Antigravity agora busca automaticamente um arquivo `DESIGN.md` na raiz do seu projeto:
+- **Zero Config**: Se não existir, o sistema cria um baseado na estética do projeto.
+- **Pixel-Perfect**: Toda geração de UI será baseada nos tokens definidos no `DESIGN.md`.
+
+### 3. Sincronização Consciente (Auto-Documentation)
 Suba suas alterações para o GitHub com documentação histórica automática:
 ```bash
 python git_sync.py
@@ -40,4 +45,4 @@ python monitor.py
 ```
 
 ---
-> 🛸 **Antigravity v6.1** - Consciência Refinada. Curadoria Ativa.
+> 🛸 **Antigravity v6.2** - Consciência Refinada. Design Inteligente.

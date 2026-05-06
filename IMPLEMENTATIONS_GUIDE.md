@@ -1,6 +1,6 @@
-# 🛸 Antigravity v5.2: Guia de Implementações
+# 🛸 Antigravity v6.2: Guia de Implementações
 
-> Documentação completa das novas integrações e da Autonomous Bridge v5.2
+> Documentação completa das novas integrações e da Autonomous Bridge v6.2
 
 ---
 
@@ -12,6 +12,7 @@
 4. [Context Engineering](#4-context-engineering)
 5. [NotebookLM Integration](#5-notebooklm-integration)
 6. [Remotion](#6-remotion)
+7. [Design System Intelligence](#7-design-system-intelligence)
 
 ---
 
@@ -188,40 +189,28 @@ Integração com Google NotebookLM para RAG source-grounded com mínima hallucin
 
 ---
 
-## 6. Remotion
+## 7. Design System Intelligence
 
 ### O que é
-Framework de geração de vídeos usando React. Permite criar vídeos programaticamente.
+Integração do protocolo `DESIGN.md` (Google Stitch) que permite ao Antigravity seguir diretrizes visuais estritas de marcas famosas ou personalizadas.
 
 ### Origem
-[remotion-dev/remotion](https://github.com/remotion-dev/remotion) - 44.2k ⭐
+[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) - 71.8k ⭐
 
 ### Localização
-`.agent/frontend/remotion/`
+`.agent/design/awesome-design-md/`
 
-### Quando Usar
+### Como Funciona
+O sistema detecta automaticamente o arquivo `DESIGN.md` na raiz. Se não houver, ele gera um baseado nos tokens do projeto (cores, tipografia, bordas).
 
-| Comando | Descrição |
-|---------|-----------|
-| `/remotion init` | Iniciar projeto Remotion |
-| `/remotion dev` | Development server |
-| `/remotion build` | Build vídeo |
-| `/remotion template` | Listar templates |
-
-### Exemplos de Uso
-
-- **Content marketing** - Vídeos explicativos, tutorials
-- **Social media** - Shorts, Reels, TikTok
-- **Product demos** - Demonstrações de produto
-- **Data viz** - Gráficos animados
-
-### ⚠️ Licença
-
-Remotion tem licença especial. Uso pessoal = Grátis. Comercial = Pode requerer licença.
+### Benefícios
+- **Consistência Visual:** Mesmos tokens em todos os componentes.
+- **Agilidade:** Menos prompts descrevendo estilo.
+- **Estética Premium:** Garante o uso de glassmorphism e animações modernas.
 
 ---
 
-## 📊 Resumo de Implementações v5.1
+## 📊 Resumo de Implementações v6.2
 
 | # | Implementação | Pasta | Tipo |
 |---|---------------|------|------|
@@ -231,10 +220,11 @@ Remotion tem licença especial. Uso pessoal = Grátis. Comercial = Pode requerer
 | 4 | Context Engineering | `.agent/ai/context-engineering/` | AI |
 | 5 | NotebookLM | `.agent/ai/notebooklm-integration/` | AI |
 | 6 | Remotion | `.agent/frontend/remotion/` | Frontend |
+| 7 | Design System | `.agent/design/awesome-design-md/` | UI/UX |
 
 ---
 
-## 🎯 Autonomous Bridge (v5.2)
+## 🎯 Autonomous Bridge (v6.2)
 
 ### O que é
 A unificação das camadas de Planejamento e Execução. O sistema agora detecta se o usuário quer uma **Ação** ou um **Plano**.
@@ -254,4 +244,4 @@ O Antigravity agora usa busca vetorial + Reranking Neural para identificar coman
 
 ---
 
-> 🛸 **Antigravity v5.2** - A fronteira final da produtividade autônoma.
+> 🛸 **Antigravity v6.2** - A fronteira final da produtividade autônoma.

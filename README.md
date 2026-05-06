@@ -1,8 +1,9 @@
-# 🛸 Antigravity-Welltiz: Neural Consciousness Ecosystem v6.1
+# 🛸 Antigravity-Welltiz: Neural Consciousness Ecosystem v6.2
 
-[![Antigravity v6.1](https://img.shields.io/badge/Engine-v6.1%20Consciousness-magenta?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
+[![Antigravity v6.2](https://img.shields.io/badge/Engine-v6.2%20Consciousness-magenta?style=for-the-badge)](https://github.com/Wellitiz/Antigravity-Welltiz)
 [![Database](https://img.shields.io/badge/Vector%20DB-ChromaDB-blue?style=for-the-badge)](https://www.trychroma.com/)
 [![Model](https://img.shields.io/badge/Neural%20Reranker-TinyBERT-orange?style=for-the-badge)](https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L-2-v2)
+[![Design](https://img.shields.io/badge/Design-Stitch--MD-green?style=for-the-badge)](https://github.com/VoltAgent/awesome-design-md)
 
 **Antigravity-Welltiz** é um ecossistema de inteligência autônoma de ultra-fidelidade, projetado para transcender a automação convencional através de recuperação semântica profunda, reranking neural e ciclos de aprendizado contínuo.
 
@@ -37,8 +38,9 @@ O Antigravity-Welltiz opera em um ciclo fechado de inteligência:
 2.  **Debate (Multi-Agent Debate)**: Três especialistas (**CyberGuard**, **NitroStream**, **NexusPrime**) debatem a melhor implementação técnica.
 3.  **Execução**: O `run.py` (Ponte Autônoma) decide o comando ideal ou plano a seguir.
 4.  **Aprendizado (Knowledge Distiller)**: Ao final da tarefa, o sistema extrai o conhecimento fixo e o destila em arquivos de memória.
-5.  **Documentação (Historian)**: O sistema redige automaticamente o progresso em `SESSAO.md`.
-6.  **Persistência (Git Sync)**: Tudo é versionado e sincronizado via `git_sync.py`.
+5.  **Design Intelligence**: O sistema agora exige e adere ao protocolo `DESIGN.md` para garantir UI/UX premium constante.
+6.  **Documentação (Historian)**: O sistema redige automaticamente o progresso em `SESSAO.md`.
+7.  **Persistência (Git Sync)**: Tudo é versionado e sincronizado via `git_sync.py`.
 
 ---
 

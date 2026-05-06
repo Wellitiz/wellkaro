@@ -1,6 +1,6 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.1 (Antigravity-Welltiz)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v6.2 (Antigravity-Welltiz)
 
-Bem-vindo ao **Antigravity v6.1**. Esta versão refina as ferramentas de consciência introduzidas na v6.0, adicionando curadoria técnica para novas habilidades e consulta histórica sob demanda.
+Bem-vindo ao **Antigravity v6.2**. Esta versão introduz o **Design System Intelligence**, garantindo que toda UI gerada siga protocolos estritos de marca via `DESIGN.md`.
 
 ---
 
@@ -87,6 +87,11 @@ A inteligência do orquestrador foi elevada ao nível de diretoria:
 - **Arquivo:** `.agent/frontend/remotion/`
 - **Features:** Video generation via React
 
+### Design System Intelligence (UI/UX)
+- **Origem:** [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) (71.8k ⭐)
+- **Arquivo:** `.agent/design/awesome-design-md/`
+- **Features:** Automated DESIGN.md enforcement, brand-consistent UI generation
+
 ---
 
 ## 🏗️ Fluxo de Trabalho Automatizado (Zero Friction)
@@ -112,6 +117,7 @@ A inteligência do orquestrador foi elevada ao nível de diretoria:
 | `chroma_db/` | Banco vetorial persistente (13.800+ documentos). |
 | `.agent/methodology/superpowers/` | Superpowers workflow system |
 | `.agent/frontend/remotion/` | Video generation framework |
+| `.agent/design/awesome-design-md/` | Design System Intelligence repository |
 
 ---
 
