@@ -91,7 +91,8 @@ def get_files_to_index(directory: Path) -> list[Path]:
     exclude_dirs = {
         "node_modules", ".next", ".git", "dist", "build", "__pycache__",
         ".venv", "env", "venv", "target", "out", "chroma_db",
-        ".ruff_cache", "public", "assets", ".expo", ".serverless"
+        ".ruff_cache", "public", "assets", ".expo", ".serverless",
+        "vendor", "libs", "library"
     }
     
     # Pastas que priorizamos em projetos (se existirem, so olhamos nelas)
@@ -104,6 +105,10 @@ def get_files_to_index(directory: Path) -> list[Path]:
         
         # Filtro de descida: ignorar pastas ruidosas
         dirs[:] = [d for d in dirs if d.lower() not in exclude_dirs_lower]
+        
+        # Feedback visual de varredura
+        if len(files_to_index) % 100 == 0:
+            print(f"  [>] Varrendo: {rel_path} ({len(files_to_index)} arquivos encontrados...)")
         
         # Estrategia Cirurgica: se estivermos na raiz de um projeto, 
         # priorizamos certas pastas e ignoramos o resto da raiz (exceto .md)
