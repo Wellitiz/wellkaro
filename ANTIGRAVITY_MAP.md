@@ -9,13 +9,13 @@ Este documento fornece a visualização estrutural completa e atualizada do ecos
 ```text
 ANTIGRAVITY_ROOT/
 ├── 🧠 Intelligence & RAG Core ( O Coração )
-│   ├── agent_router.py       # Orquestrador v6.7 (Neural Intelligence)
+│   ├── agent_router.py       # Orquestrador v6.7 (Neural Reranking via TinyBERT)
 │   ├── index_skills.py       # Motor v5 (Real-time Scanning Feedback)
 │   ├── run.py                 # Ponto de Entrada Universal
 │   └── monitor.py             # Monitor de Consciência Real-time
 │
 ├── 📂 Knowledge Base ( Memória Global )
-│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills
+│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills [v6.7]
 │   │   ├── specialists/      # Specialized Knowledge Clusters
 │   │   │   └── bulk_import/  # 88 repositories / 56k docs indexed [v6.7]
 │   │   └── design/           # Design System Protocol (DESIGN.md)

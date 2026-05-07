@@ -23,6 +23,11 @@ A performance 100/100 agora é a lei nativa do Core:
 ### 3. Autonomia Estética (Design Consciousness)
 - **DESIGN.md Protocol**: O sistema agora é 100% guiado pela identidade visual do projeto através do arquivo de tokens na raiz.
 
+### 4. Motor Neural (Neural Reranking v6.7)
+O Antigravity utiliza uma camada de filtragem neural local para garantir precisão absoluta:
+- **TinyBERT-L-2-v2**: Todos os resultados recuperados do ChromaDB passam por um modelo de **Cross-Encoder local**.
+- **Context Validation**: A IA local valida se o snippet de código é realmente a melhor solução para o problema antes de injetá-lo no prompt, eliminando alucinações.
+
 ---
 
 ## 📂 Estrutura de Arquivos v6.7 (Final Optimized)
