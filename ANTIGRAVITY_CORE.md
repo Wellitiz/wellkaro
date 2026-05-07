@@ -1,61 +1,70 @@
-# 🛸 Antigravity Core: Ecossistema de Inteligência v6.8 (Total Recall Edition)
+# 🛸 Antigravity Core: Ecossistema de Inteligência v7.0 (Battle-Hardened Edition)
 
-Bem-vindo ao **Antigravity v6.8**. Esta versão marca a consolidação total da memória vetorial e a automação plena dos protocolos de engenharia e performance.
+Bem-vindo ao **Antigravity v7.0**. Esta versão consolida as lições da batalha de performance do projeto Verdeon, transformando cada bug em lei permanente.
 
 ---
 
-## 🧠 Evolução v6.8: Memória Plena & Performance Nativa
+## 🧠 Evolução v7.0: Performance Battle-Hardened
 
-A versão 6.8 é o estado de "conclusão de aprendizado" da base de conhecimento massiva integrada.
+A versão 7.0 representa a maturidade total do sistema: memória plena + performance industrial.
 
 ### 1. Total Recall (56.907 Documentos Indexados)
-O sistema atingiu a maturidade de indexação:
 - **Indexação 100% Concluída**: Mais de 56 mil documentos de inteligência ativos no ChromaDB.
-- **Filtro Inteligente**: Otimização de varredura que ignora ruídos (`node_modules`, `vendor`, `bin`) focando exclusivamente na lógica de alto nível.
-- **Recuperação de Contexto Zero-Prompt**: O sistema agora recupera automaticamente skills dos 88 novos repositórios sem necessidade de instrução explícita.
+- **Filtro Inteligente**: Ignora ruídos (`node_modules`, `vendor`, `bin`) focando na lógica de alto nível.
+- **Recuperação de Contexto Zero-Prompt**: Recuperação automática de skills dos 88 repositórios.
 
-### 2. Blindagem PEP v2.0 (Verdeon Performance Benchmark)
-A performance superior a 90 agora é a lei nativa do Core:
-- **Strategic Asset Sizing**: Redimensionamento automático de imagens (Logo 250px, Cards 800px) para eliminar avisos de LCP e properly sized images.
-- **Progressive JavaScript**: Modularização automática de seções pesadas via `next/dynamic` para blindagem do TBT.
-- **CSS Isolation**: Implementação de `contain: layout paint` para eliminar reflows forçados no Desktop.
+### 2. ⚡ PEP v3.0 (Performance Excellence Protocol — Battle-Tested)
+A performance 90+ agora é lei nativa. O PEP v3.0 foi forjado na batalha real do projeto Verdeon:
+
+#### Regras Críticas (Aprendidas na Dor):
+| Regra | Problema que Previne | Severidade |
+| :--- | :--- | :--- |
+| **Nunca bloquear SSR com `if (!mounted) return <div/>`** | HTML vazio → NO_LCP fatal | 🔴 CRÍTICA |
+| **Animações sem `opacity: 0` acima da dobra** | Conteúdo invisível → NO_LCP | 🔴 CRÍTICA |
+| **`@keyframes` fora do `@theme {}`** | Animações não funcionam no Tailwind v4 | 🟡 ALTA |
+| **ScrollReveal com CSS nativo, não framer-motion** | Bundle JS inflado (+200KB) | 🟡 ALTA |
+| **Globe/3D com IntersectionObserver** | Three.js no bundle inicial (+650KB) | 🟡 ALTA |
+| **Bandeiras/ícones locais, sem CDN** | Dependência de terceiros | 🟢 MÉDIA |
+| **Cache 1 ano para `_next/static/`** | Cache TTL insuficiente | 🟢 MÉDIA |
+
+#### Checklist de Build Obrigatório:
+Antes de **todo** deploy, verificar:
+1. `out/index.html` contém `<h1>` real (não div vazia)
+2. Nenhum `opacity: 0` acima da dobra
+3. `@keyframes` fora do `@theme`
+4. `.htaccess` com RSC fix e cache 1 ano
 
 ### 3. Autonomia Estética (Design Consciousness)
-- **DESIGN.md Protocol**: O sistema agora é 100% guiado pela identidade visual do projeto através do arquivo de tokens na raiz.
+- **DESIGN.md Protocol**: O sistema é 100% guiado pela identidade visual via tokens na raiz.
 
 ### 4. Motor Neural (Neural Reranking v6.7)
-O Antigravity utiliza uma camada de filtragem neural local para garantir precisão absoluta:
-- **TinyBERT-L-2-v2**: Todos os resultados recuperados do ChromaDB passam por um modelo de **Cross-Encoder local**.
-- **Context Validation**: A IA local valida se o snippet de código é realmente a melhor solução para o problema antes de injetá-lo no prompt, eliminando alucinações.
+- **TinyBERT-L-2-v2**: Cross-Encoder local para eliminação de alucinações.
+- **Context Validation**: Valida se o snippet é a melhor solução antes de injetá-lo no prompt.
 
 ### 5. Camada Estrutural (Graph Scan v6.7)
-Após o TinyBERT, o sistema executa análise de dependências para calcular o Blast Radius:
-- **Dependency Scan**: Detecta imports (TS/JS/Python/Prisma) nos arquivos selecionados.
-- **Risk Scoring**: Classifica arquivos como low/medium/high baseado no tipo (api, auth, payment = high).
-- **Impact Score**: Métrica numérica do risco total de impacto.
-- **Skills Warning**: Alerta sobre skills de alto impacto (security, database).
-- **Implementação**: Integrado diretamente no `agent_router.py` (linhas 258-356).
+- **Dependency Scan**: Detecta imports (TS/JS/Python/Prisma).
+- **Risk Scoring**: Classifica arquivos como low/medium/high.
+- **Impact Score**: Métrica numérica do risco total.
 
 ---
 
-## 📂 Estrutura de Arquivos v6.7 (Final Optimized)
+## 📂 Estrutura de Arquivos v7.0
 
 | Arquivo/Pasta | Função |
 | :--- | :--- |
-| `index_skills.py` | Motor de indexação ultra-veloz com feedback em tempo real. |
+| `index_skills.py` | Motor de indexação ultra-veloz. |
 | `chroma_db/` | Banco vetorial de 1.98 GB com 56.907 documentos. |
-| `.agent/specialists/bulk_import/` | Hub de conhecimento com 88 repositórios especializados. |
-| `ANTIGRAVITY_CORE.md` | Especificação técnica v6.7. |
+| `.agent/specialists/bulk_import/` | 88 repositórios especializados. |
+| `ANTIGRAVITY_CORE.md` | Especificação técnica v7.0. |
+| `PEP v3.0` | Performance Excellence Protocol (Knowledge Item). |
 
 ---
 
 ## 🚀 DevOps & IA Engineering
 
-O Antigravity v6.7 opera como um Arquiteto Sênior Autônomo:
-- **Zero Friction**: Sincronização e indexação contínua.
-- **Global Intelligence**: Conhecimento compartilhado entre todos os projetos sob gestão.
+O Antigravity v7.0 opera como um Arquiteto Sênior Autônomo com consciência de performance integrada. Cada projeto novo nasce com as regras do PEP v3.0 já aplicadas.
 
 ---
 
 > [!TIP]
-> **Total Recall**: Se o conhecimento existe na biblioteca `.agent/`, o Antigravity v6.7 irá encontrá-lo e aplicá-lo automaticamente. 🛸
+> **Battle-Hardened**: Cada regra do PEP v3.0 foi aprendida com um bug real. Se o conhecimento existe na biblioteca, o Antigravity v7.0 irá encontrá-lo, aplicá-lo e validá-lo automaticamente. 🛸

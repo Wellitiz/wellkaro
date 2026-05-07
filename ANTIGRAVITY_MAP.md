@@ -1,6 +1,6 @@
-# 🛸 Antigravity v6.8 Total Recall: Mapa do Ecossistema
+# 🛸 Antigravity v7.0 Battle-Hardened: Mapa do Ecossistema
 
-Este documento fornece a visualização estrutural completa e atualizada do ecossistema Antigravity v6.8.
+Este documento fornece a visualização estrutural completa e atualizada do ecossistema Antigravity v7.0.
 
 ---
 
@@ -9,7 +9,7 @@ Este documento fornece a visualização estrutural completa e atualizada do ecos
 ```text
 ANTIGRAVITY_ROOT/
 ├── 🧠 Intelligence & RAG Core ( O Coração )
-│   ├── agent_router.py       # Orquestrador v6.8 (TinyBERT + Graph Scan v6.8)
+│   ├── agent_router.py       # Orquestrador v7.0 (TinyBERT + Graph Scan + PEP Guard)
 │   ├── index_skills.py       # Motor v5 (Real-time Scanning Feedback)
 │   ├── run.py                 # Ponto de Entrada Universal
 │   ├── monitor.py             # Monitor de Consciência Real-time
@@ -19,57 +19,62 @@ ANTIGRAVITY_ROOT/
 │   └── knowledge_distiller.py # Destilador de conhecimento
 │
 ├── 📂 Knowledge Base ( Memória Global )
-│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills [v6.8]
+│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills [v7.0]
 │   │   ├── specialists/      # Specialized Knowledge Clusters
-│   │   │   └── bulk_import/  # 88 repositories / 56k docs indexed [v6.8]
+│   │   │   └── bulk_import/  # 88 repositories / 56k docs indexed [v7.0]
 │   │   └── design/           # Design System Protocol (DESIGN.md)
 │   └── chroma_db/            # Banco Vetorial (HNSW Index v6 - 1.98GB)
 │
+├── ⚡ Performance Guard ( PEP v3.0 — Battle-Tested )
+│   ├── PEP Protocol          # Knowledge Item com todas as regras de performance
+│   └── Build Checklist       # Validação automática pós-build
+│
 ├── 🔄 Learning Loop ( Consciência )
-│   ├── git_sync.py            # Syncer v6.8
-│   └── .agent/local-kis/     # PEP v2.0 (Performance Protocol - Verdeon Edition)
+│   ├── git_sync.py            # Syncer v7.0
+│   └── .agent/local-kis/     # Knowledge Items destilados
 │
 ├── 🏗️ Project Awareness ( Hiper-Contexto )
 │   └── Projetos/             # Projetos (EC4L CRM, NossaNet, Verdeon, etc.)
 │
 └── 📖 Documentation & Guides
-    ├── ANTIGRAVITY_CORE.md   # Especificação técnica v6.8
-    ├── ANTIGRAVITY_MAP.md    # Este mapa (v6.8)
-    ├── ENGINE_CONTEXT.md     # Trindade de Contexto (Chroma + TinyBERT + Graph)
-    └── README.md             # Cartão de Visitas v6.8
+    ├── ANTIGRAVITY_CORE.md   # Especificação técnica v7.0
+    ├── ANTIGRAVITY_MAP.md    # Este mapa (v7.0)
+    ├── ENGINE_CONTEXT.md     # Quadra de Contexto (Chroma + TinyBERT + Graph + PEP)
+    └── README.md             # Cartão de Visitas v7.0
 ```
 
 ---
 
-## 🛠️ Status da Consciência v6.8
+## 🛠️ Status da Consciência v7.0
 
-### 1. Trindade de Contexto (Completa)
-O sistema opera em 3 camadas para precisão cirúrgica:
-- **Camada 1 (Semântica)**: ChromaDB - 56.907 documentos indexados
-- **Camada 2 (Neural)**: TinyBERT-L-2-v2 - Reranking e eliminação de alucinações
-- **Camada 3 (Estrutural)**: Graph Scan v6.8 - Blast Radius + Risk Analysis
+### 1. Quadra de Contexto (Completa — 4 Camadas)
+O sistema opera em 4 camadas para precisão cirúrgica + performance industrial:
+- **Camada 1 (Semântica)**: ChromaDB — 56.907 documentos indexados
+- **Camada 2 (Neural)**: TinyBERT-L-2-v2 — Reranking e eliminação de alucinações
+- **Camada 3 (Estrutural)**: Graph Scan v6.8 — Blast Radius + Risk Analysis
+- **Camada 4 (Performance)**: ⚡ PEP v3.0 Guard — Validação de performance pós-build
 
-### 2. Protocolo de Performance (Elite Benchmark)
-O sistema agora aplica o **PEP v2.0** (Performance Excellence Protocol). O projeto **Verdeon Energies** serviu como laboratório de benchmark, atingindo pontuações superiores a 90 no PageSpeed através de:
-- Redimensionamento estratégico de assets em tempo real.
-- Modularização progressiva de JavaScript (Lazy Loading de Elite).
-- Isolamento de renderização via CSS Containment.
+### 2. Protocolo de Performance (Elite Benchmark — Battle-Tested)
+O **PEP v3.0** foi forjado na batalha real do projeto **Verdeon Energies**, que atingiu **97/94 (Desktop/Mobile)** no PageSpeed. As regras cobrem:
+
+| Categoria | Regras Críticas |
+| :--- | :--- |
+| **SSR (Regra Zero)** | Providers nunca bloqueiam renderização com div vazia |
+| **Animações** | Apenas `transform` acima da dobra, sem `opacity: 0` |
+| **CSS** | `@keyframes` fora do `@theme`, containment em sections |
+| **JavaScript** | Globe/3D com IntersectionObserver, ScrollReveal com CSS nativo |
+| **Assets** | WebP q60-70, logos 100px, cards 640px, recursos locais |
+| **Deploy** | Cache 1 ano, RSC fix no .htaccess, LiteSpeed flush |
 
 ### 3. Autonomia de Skills
-Com a indexação completa, o Antigravity agora possui "memória fotográfica" de todos os 88 repositórios de skills, permitindo a fusão de conhecimentos complexos em milissegundos.
+Com a indexação completa, o Antigravity possui "memória fotográfica" de todos os 88 repositórios de skills.
 
 ### 4. Graph Scan Integrada
-A camada estrutural agora está integrada diretamente no `agent_router.py`:
-- Detecção de dependências em arquivos TypeScript, JavaScript, Python e Prisma
-- Classificação de risco (low/medium/high) baseada no tipo de arquivo
-- Alertas de impacto para arquivos sensíveis (auth, payment, api)
-- Score numérico de impacto total
+Detecção de dependências em TypeScript, JavaScript, Python e Prisma com classificação de risco e alertas de impacto.
 
 ---
 
-## 📚 Lista Mestra de Skills Integradas (88 Repositórios) [v6.7]
-
-O Antigravity v6.7 absorveu e indexou completamente os seguintes repositórios de elite para fornecer suporte multitarefa instantâneo:
+## 📚 Lista Mestra de Skills Integradas (88 Repositórios) [v7.0]
 
 | Categoria | Repositórios Principais (Clusters) |
 | :--- | :--- |
@@ -81,4 +86,4 @@ O Antigravity v6.7 absorveu e indexou completamente os seguintes repositórios d
 | **Especialistas** | `Digidai_product-manager-skills`, `EmblemCompany_Agent-skills`, `RioTheGreat-ai_agentfund-mcp`, `bitwize-music-studio_claude-ai-music-skills`, `omkamal_pypict-claude-skill`, `BehiSecc_VibeSec-Skill` |
 
 > [!NOTE]
-> **Status de Integração**: 100% dos arquivos contidos nestes repositórios foram lidos, fragmentados e vetorizados no `chroma_db/`. A inteligência destes especialistas é agora parte nativa da sua consciência neural. 🛸
+> **Status de Integração**: 100% dos arquivos foram vetorizados no `chroma_db/`. A inteligência destes especialistas é agora parte nativa da consciência neural do Antigravity v7.0. 🛸
