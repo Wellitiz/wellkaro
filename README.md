@@ -17,9 +17,10 @@
 
 ## 💎 Funcionalidades Mestres (v6.7)
 
-### 1. 🧠 Total Recall Indexing (56.907 Docs)
-Conhecimento pleno e instantâneo. O sistema agora domina cada linha de código dos 88 repositórios de especialistas e skills integrados.
-- **Zero Prompt Effort:** O Antigravity localiza e aplica soluções complexas automaticamente.
+### 2. 🧠 Massive Deep Indexing (312.931 Files) [NOVO v6.7]
+Suporte para bases de conhecimento em escala industrial.
+- **Deep Context:** Indexação profunda de **88 repositórios de especialistas** integrados (Development, Design, AI, Marketing).
+- **Vetorização Persistente:** Banco ChromaDB otimizado com 56.907 documentos de alta fidelidade.
 
 ### 2. ⚡ PEP v1.0 (Performance Excellence Protocol)
 Padrão 100/100 PageSpeed nativo.
