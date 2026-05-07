@@ -11,7 +11,7 @@
 
 ## 🗺️ Guia de Navegação Rápida
 
-[🚀 Início Rápido](QUICKSTART.md) • [🧠 Especificações do Core](ANTIGRAVITY_CORE.md) • [🗺️ Mapa do Ecossistema](ANTIGRAVITY_MAP.md) • [📜 Histórico da Sessão](SESSAO.md)
+[🚀 Início Rápido](QUICKSTART.md) • [🧠 Especificações do Core](ANTIGRAVITY_CORE.md) • [🔱 Motor de Contexto](ENGINE_CONTEXT.md) • [🗺️ Mapa do Ecossistema](ANTIGRAVITY_MAP.md) • [📜 Histórico da Sessão](SESSAO.md)
 
 ---
 
@@ -32,6 +32,16 @@ O sistema entende a alma visual do seu projeto via `DESIGN.md`, mantendo a consi
 
 ### 🧬 Structural Intelligence
 Mapeamento estrutural total para refatorações seguras e precisão arquitetural absoluta.
+
+---
+
+## 🔱 A Trindade de Contexto (Context Engine)
+O Antigravity v6.7 opera sob três camadas de identificação para precisão cirúrgica:
+- **ChromaDB**: Camada Semântica (Busca por significado).
+- **TinyBERT**: Camada Neural (Reranking e filtragem local).
+- **Knowledge Graph**: Camada Estrutural (Mapeamento de dependências).
+
+[Saiba como o motor funciona em 1 segundo →](ENGINE_CONTEXT.md)
 
 ---
 
