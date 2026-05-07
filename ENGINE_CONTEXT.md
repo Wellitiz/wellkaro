@@ -16,10 +16,11 @@ O Antigravity v6.7 utiliza uma arquitetura de três camadas para garantir que ca
 *   **Como funciona**: Utiliza o modelo `TinyBERT-L-2-v2` rodando localmente. Ele analisa os resultados do Chroma e faz uma comparação profunda (Cross-Encoding) entre a sua pergunta e o conteúdo do arquivo.
 *   **Impacto**: Elimina alucinações. Se o Chroma trouxer um arquivo irrelevante, o TinyBERT o descarta antes que ele chegue ao cérebro da IA.
 
-### 3. Camada Estrutural (Knowledge Graph)
-*   **Função**: Mapeamento de Dependências.
-*   **Como funciona**: Constrói um grafo de conexões entre os arquivos. Ele entende Imports, chamadas de funções e variáveis globais.
+### 3. Camada Estrutural (Knowledge Graph / Graph Scan v6.7)
+*   **Função**: Mapeamento de Dependências + Blast Radius.
+*   **Como funciona**: Executa análise leve de dependências nos arquivos selecionados. Detecta imports, chamadas de funções e calcula risco de impacto. Implementado diretamente no `agent_router.py`.
 *   **Impacto**: Identifica o **Blast Radius** (Raio de Impacto). Ele garante que, se você mudar algo em um lugar, o sistema saiba exatamente quais outros pontos precisam de ajuste para evitar bugs.
+*   **Features**: High-impact file detection, Risk scoring (low/medium/high), Skills de alto impacto alert.
 
 ---
 

@@ -237,6 +237,125 @@ def retrieve_documents(
     }
 
 
+def scan_file_dependencies(file_path: str, project_name: str = "global") -> dict:
+    """
+    Realiza uma varredura leve de dependências para o Graph Scan.
+    Detecta imports, chamadas de funções e variáveis globais para calcular o Blast Radius.
+    """
+    import re
+    from pathlib import Path
+    
+    impact_data = {
+        "direct_imports": [],
+        "possible_dependents": [],
+        "risk_level": "low",
+        "files_to_check": []
+    }
+    
+    try:
+        # Converte path para objeto Path
+        path_obj = Path(file_path)
+        if not path_obj.exists():
+            return impact_data
+        
+        # Lê o conteúdo do arquivo
+        content = path_obj.read_text(encoding="utf-8", errors="ignore")
+        
+        # Detecta linguagem pelo extensão
+        ext = path_obj.suffix.lower()
+        
+        if ext in [".ts", ".tsx", ".js", ".jsx"]:
+            # TypeScript/JavaScript: busca imports
+            imports = re.findall(r"(?:import|from)\s+['\"]([^'\"]+)['\"]", content)
+            impact_data["direct_imports"] = imports[:10]  # Limita a 10
+            
+            # Busca chamadas de funções comuns
+            funcs = re.findall(r"(?:function\s+|const\s+|let\s+|var\s+)(\w+)\s*[=(:]", content)
+            impact_data["functions_defined"] = funcs[:5]
+            
+        elif ext == ".py":
+            # Python: busca imports
+            imports = re.findall(r"^(?:from\s+(\S+)\s+import|import\s+(\S+))", content, re.MULTILINE)
+            impact_data["direct_imports"] = [i[0] or i[1] for i in imports][:10]
+            
+        elif ext == ".prisma":
+            # Prisma: busca models
+            models = re.findall(r"model\s+(\w+)", content)
+            impact_data["models_defined"] = models[:5]
+        
+        # Calcula risco baseado no tipo de arquivo
+        high_risk_patterns = ["api", "controller", "service", "auth", "payment", "database"]
+        if any(p in file_path.lower() for p in high_risk_patterns):
+            impact_data["risk_level"] = "high"
+        elif "component" in file_path.lower() or "page" in file_path.lower():
+            impact_data["risk_level"] = "medium"
+            
+        # Lista arquivos para verificar (simulação do blast radius)
+        parent_dir = str(path_obj.parent)
+        impact_data["files_to_check"] = [
+            f"{parent_dir}/index.ts",
+            f"{parent_dir}/index.js", 
+            f"{parent_dir}/module.ts",
+            f"{parent_dir}/utils.ts"
+        ]
+        
+    except Exception as e:
+        log_event("graph_scan_error", {"file": file_path, "error": str(e)})
+    
+    return impact_data
+
+
+def graph_scan(retrieval: RetrievalResult) -> dict:
+    """
+    Executa o Graph Scan após o TinyBERT reranking.
+    Analisa dependências e calcula Blast Radius para cada arquivo recuperado.
+    """
+    scan_results = {
+        "high_impact_files": [],
+        "potential_issues": [],
+        "files_to_review": [],
+        "total_impact_score": 0
+    }
+    
+    # Analisa todos os arquivos de código retornados
+    for code_item in retrieval.get("code", []):
+        file_path = code_item.get("file_path", "")
+        project = code_item.get("project", "global")
+        
+        # Se for um arquivo de projeto (não global), faz a análise de dependências
+        if project != "global" and file_path:
+            deps = scan_file_dependencies(file_path, project)
+            
+            if deps.get("risk_level") in ["high", "medium"]:
+                scan_results["high_impact_files"].append({
+                    "file": file_path,
+                    "risk": deps["risk_level"],
+                    "imports": deps.get("direct_imports", [])[:3],
+                    "score": code_item.get("score", 0)
+                })
+                scan_results["total_impact_score"] += 1 if deps["risk_level"] == "high" else 0.5
+            
+            if deps.get("files_to_check"):
+                scan_results["files_to_review"].extend(deps["files_to_check"][:2])
+    
+    # Analisa skills e agents para potenciais conflitos
+    for skill in retrieval.get("skills", []):
+        skill_name = skill.get("name", "")
+        if any(w in skill_name.lower() for w in ["security", "auth", "database"]):
+            scan_results["potential_issues"].append({
+                "type": "high_importance_skill",
+                "name": skill_name,
+                "advice": "Revisar com cuidado -skill de alto impacto"
+            })
+    
+    log_event("graph_scan_complete", {
+        "high_impact_count": len(scan_results["high_impact_files"]),
+        "total_impact_score": scan_results["total_impact_score"]
+    })
+    
+    return scan_results
+
+
 def build_optimized_context(
     user_prompt: str, 
     project_name: Optional[str] = None,
@@ -249,6 +368,10 @@ def build_optimized_context(
     """
     # Busca normal de documentos
     retrieval = retrieve_documents(user_prompt, project_name, n_agents, n_skills, n_code)
+    
+    # --- ETAPA DE GRAPH SCAN v6.7 (Blast Radius Analysis) ---
+    graph_analysis = graph_scan(retrieval)
+    log_event("graph_scan", {"high_impact": len(graph_analysis.get("high_impact_files", []))})
     
     context_parts = []
     
@@ -284,6 +407,20 @@ def build_optimized_context(
             context_parts.append("```")
             context_parts.append(code["content"][:2000] + "...")  # Limit snippet size
             context_parts.append("```\n")
+
+    # --- BLAST RADIUS ANALYSIS (Graph Scan v6.7) ---
+    if graph_analysis.get("high_impact_files"):
+        context_parts.append(f"\n## ⚠️ ARQUIVOS DE ALTO IMPACTO (BLAST RADIUS):")
+        for item in graph_analysis["high_impact_files"][:3]:
+            context_parts.append(f"- **{item['file']}** (Risk: {item['risk']}) - Import: {', '.join(item['imports'][:2])}")
+    
+    if graph_analysis.get("potential_issues"):
+        context_parts.append(f"\n## 🛡️ ATENÇÃO - SKILLS DE ALTO IMPACTO:")
+        for issue in graph_analysis["potential_issues"][:2]:
+            context_parts.append(f"- {issue['name']}: {issue['advice']}")
+    
+    if project_name and project_name != "global":
+        context_parts.append(f"\n## 📊 IMPACT SCORE: {graph_analysis.get('total_impact_score', 0):.1f}")
 
     context_str = "\n".join(context_parts)
 

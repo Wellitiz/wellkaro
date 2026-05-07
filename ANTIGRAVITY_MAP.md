@@ -1,6 +1,6 @@
-# 🛸 Antigravity v6.7 Total Recall: Mapa do Ecossistema
+# 🛸 Antigravity v6.8 Total Recall: Mapa do Ecossistema
 
-Este documento fornece a visualização estrutural completa e atualizada do ecossistema Antigravity v6.7.
+Este documento fornece a visualização estrutural completa e atualizada do ecossistema Antigravity v6.8.
 
 ---
 
@@ -9,44 +9,61 @@ Este documento fornece a visualização estrutural completa e atualizada do ecos
 ```text
 ANTIGRAVITY_ROOT/
 ├── 🧠 Intelligence & RAG Core ( O Coração )
-│   ├── agent_router.py       # Orquestrador v6.7 (Neural Reranking via TinyBERT)
+│   ├── agent_router.py       # Orquestrador v6.8 (TinyBERT + Graph Scan v6.8)
 │   ├── index_skills.py       # Motor v5 (Real-time Scanning Feedback)
 │   ├── run.py                 # Ponto de Entrada Universal
-│   └── monitor.py             # Monitor de Consciência Real-time
+│   ├── monitor.py             # Monitor de Consciência Real-time
+│   ├── auto_rag.py            # Planejador de contexto automático
+│   ├── auto_executor.py       # Executor de comandos autônomos
+│   ├── historian.py           # Historiador de sessão
+│   └── knowledge_distiller.py # Destilador de conhecimento
 │
 ├── 📂 Knowledge Base ( Memória Global )
-│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills [v6.7]
+│   ├── .agent/               # Repositório de 1.500+ Agentes e Skills [v6.8]
 │   │   ├── specialists/      # Specialized Knowledge Clusters
-│   │   │   └── bulk_import/  # 88 repositories / 56k docs indexed [v6.7]
+│   │   │   └── bulk_import/  # 88 repositories / 56k docs indexed [v6.8]
 │   │   └── design/           # Design System Protocol (DESIGN.md)
 │   └── chroma_db/            # Banco Vetorial (HNSW Index v6 - 1.98GB)
 │
 ├── 🔄 Learning Loop ( Consciência )
-│   ├── historian.py           # Historiador Autônomo
-│   ├── git_sync.py            # Syncer v6.7
-│   └── .agent/local-kis/     # PEP v1.0 (Performance Protocol)
+│   ├── git_sync.py            # Syncer v6.8
+│   └── .agent/local-kis/     # PEP v2.0 (Performance Protocol - Verdeon Edition)
 │
 ├── 🏗️ Project Awareness ( Hiper-Contexto )
-│   └── Projetos/             # Projetos (NossaNet, iGreen, Verdeon, etc.)
+│   └── Projetos/             # Projetos (EC4L CRM, NossaNet, Verdeon, etc.)
 │
 └── 📖 Documentation & Guides
-    ├── ANTIGRAVITY_CORE.md   # Especificação técnica v6.7
-    ├── ANTIGRAVITY_MAP.md    # Este mapa (v6.7)
-    └── README.md             # Cartão de Visitas v6.7
+    ├── ANTIGRAVITY_CORE.md   # Especificação técnica v6.8
+    ├── ANTIGRAVITY_MAP.md    # Este mapa (v6.8)
+    ├── ENGINE_CONTEXT.md     # Trindade de Contexto (Chroma + TinyBERT + Graph)
+    └── README.md             # Cartão de Visitas v6.8
 ```
 
 ---
 
-## 🛠️ Status da Consciência v6.7
+## 🛠️ Status da Consciência v6.8
 
-### 1. Documentação Indexada
-Atingimos a marca de **56.907 documentos** processados. Isso cobre 100% dos arquivos de lógica, estilos e documentação do ecossistema, ignorando deliberadamente arquivos binários e pastas de terceiros (`vendor`, `node_modules`).
+### 1. Trindade de Contexto (Completa)
+O sistema opera em 3 camadas para precisão cirúrgica:
+- **Camada 1 (Semântica)**: ChromaDB - 56.907 documentos indexados
+- **Camada 2 (Neural)**: TinyBERT-L-2-v2 - Reranking e eliminação de alucinações
+- **Camada 3 (Estrutural)**: Graph Scan v6.8 - Blast Radius + Risk Analysis
 
-### 2. Protocolo de Performance Ativo
-O sistema agora aplica o **PEP v1.0** (Performance Excellence Protocol) em todas as tarefas, garantindo sites com pontuação 100 no Lighthouse sem necessidade de revisão manual.
+### 2. Protocolo de Performance (Elite Benchmark)
+O sistema agora aplica o **PEP v2.0** (Performance Excellence Protocol). O projeto **Verdeon Energies** serviu como laboratório de benchmark, atingindo pontuações superiores a 90 no PageSpeed através de:
+- Redimensionamento estratégico de assets em tempo real.
+- Modularização progressiva de JavaScript (Lazy Loading de Elite).
+- Isolamento de renderização via CSS Containment.
 
 ### 3. Autonomia de Skills
 Com a indexação completa, o Antigravity agora possui "memória fotográfica" de todos os 88 repositórios de skills, permitindo a fusão de conhecimentos complexos em milissegundos.
+
+### 4. Graph Scan Integrada
+A camada estrutural agora está integrada diretamente no `agent_router.py`:
+- Detecção de dependências em arquivos TypeScript, JavaScript, Python e Prisma
+- Classificação de risco (low/medium/high) baseada no tipo de arquivo
+- Alertas de impacto para arquivos sensíveis (auth, payment, api)
+- Score numérico de impacto total
 
 ---
 

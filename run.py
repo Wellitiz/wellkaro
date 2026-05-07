@@ -11,6 +11,7 @@ Executa automaticamente ao iniciar um projeto.
 """
 
 import sys
+import subprocess
 from pathlib import Path
 import auto_rag
 import auto_executor
