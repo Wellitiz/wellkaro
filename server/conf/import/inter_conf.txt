@@ -38,3 +38,11 @@ log_db_port: 3306
 log_db_id: wellkaro
 log_db_pw: SUA_SENHA_AQUI
 log_db_db: ragnarok
+
+// MySQL IPBan Database
+ipban_db_ip: 127.0.0.1
+ipban_db_port: 3306
+ipban_db_id: wellkaro
+ipban_db_pw: SUA_SENHA_AQUI
+ipban_db_db: ragnarok
+
