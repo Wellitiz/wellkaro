@@ -13,19 +13,19 @@
  */  
 window.ROConfigBase = {  
     development: false,  
-    remoteClient: 'https://grf.robrowser.com/',  
+    remoteClient: 'https://wellkaro.wellka.com.br/remote/',  
     servers: [{  
-        display: 'roBrowser Demo Server',  
-        desc: 'roBrowser demo server',  
-        address: '127.0.0.1',  
+        display: 'WellkaRO',  
+        desc: 'WellkaRO Ragnarok Online Web Client',  
+        address: '64.181.164.199',  
         port: 6900,  
         version: 55,  
         langtype: 1,  
-        packetver: 20130618,  
+        packetver: 20211103,  
         renewal: false,  
         worldMapSettings: { episode: 12 },  
         packetKeys: false,  
-        socketProxy: 'wss://connect.robrowser.com',  
+        socketProxy: 'wss://wellkaro.wellka.com.br/ws',  
         adminList: [2000000]  
     }],
     packetDump: false,  
