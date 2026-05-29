@@ -30,7 +30,7 @@ window.ROConfigBase = {
     }],
     packetDump: false,  
     skipServerList: true,  
-    skipIntro: false,  
+    skipIntro: true,  
     aura: {},  
     autoLogin: [],  
     BGMFileExtension: ['mp3'],  
