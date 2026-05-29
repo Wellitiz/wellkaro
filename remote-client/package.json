@@ -1,0 +1,14 @@
+{
+  "name": "wellkaro-remote-client",
+  "version": "1.0.0",
+  "description": "Remote Client — Serve assets do data.grf para o roBrowser via HTTP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "convert:encoding": "node convert-encoding.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "grf-loader": "^1.0.0"
+  }
+}

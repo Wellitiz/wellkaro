@@ -1,0 +1,10 @@
+// ═══════════════════════════════════════════════════════════════════
+// WellkaRO — Configuração do Char Server
+// ═══════════════════════════════════════════════════════════════════
+// IP público da VPS (necessário para o cliente conectar)
+
+// IMPORTANTE: Substitua pelo IP público da sua VPS Oracle
+char_ip: SEU_IP_VPS_AQUI
+
+// Nome do servidor exibido na tela de seleção
+server_name: WellkaRO

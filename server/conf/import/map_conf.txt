@@ -1,0 +1,7 @@
+// ═══════════════════════════════════════════════════════════════════
+// WellkaRO — Configuração do Map Server
+// ═══════════════════════════════════════════════════════════════════
+// IP público da VPS (necessário para o cliente conectar)
+
+// IMPORTANTE: Substitua pelo IP público da sua VPS Oracle
+map_ip: SEU_IP_VPS_AQUI

@@ -1,11 +1,32 @@
-chroma_db/
+# Binários Windows (não rodam no Linux)
+*.exe
+*.dll
+*.pdb
+*.bat
+
+# Arquivos GRF grandes (serão enviados via SCP/rsync separadamente)
+*.grf
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
 __pycache__/
 *.pyc
-.venv/
-.ruff_cache/
-antigravity_conscience.log
+venv/
 .env
-tmp/
-node_modules/
+
+# Logs
+log/
 *.log
-Projetos/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vs/
+.vscode/
+.idea/

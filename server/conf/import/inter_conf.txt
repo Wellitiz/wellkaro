@@ -1,0 +1,40 @@
+// ═══════════════════════════════════════════════════════════════════
+// WellkaRO — Configuração de conexão ao banco de dados
+// ═══════════════════════════════════════════════════════════════════
+// Este arquivo sobrescreve as configurações padrão do inter_athena.conf
+// Edite com os dados do MySQL da VPS
+
+// MySQL Login server
+login_server_ip: 127.0.0.1
+login_server_port: 3306
+login_server_id: wellkaro
+login_server_pw: SUA_SENHA_AQUI
+login_server_db: ragnarok
+
+// MySQL Character server
+char_server_ip: 127.0.0.1
+char_server_port: 3306
+char_server_id: wellkaro
+char_server_pw: SUA_SENHA_AQUI
+char_server_db: ragnarok
+
+// MySQL Map Server
+map_server_ip: 127.0.0.1
+map_server_port: 3306
+map_server_id: wellkaro
+map_server_pw: SUA_SENHA_AQUI
+map_server_db: ragnarok
+
+// MySQL Web Server
+web_server_ip: 127.0.0.1
+web_server_port: 3306
+web_server_id: wellkaro
+web_server_pw: SUA_SENHA_AQUI
+web_server_db: ragnarok
+
+// MySQL Log Database
+log_db_ip: 127.0.0.1
+log_db_port: 3306
+log_db_id: wellkaro
+log_db_pw: SUA_SENHA_AQUI
+log_db_db: ragnarok
