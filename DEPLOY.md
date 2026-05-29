@@ -81,10 +81,10 @@ O servidor rAthena precisa ser compilado para Linux (os .exe são Windows):
 
 ```bash
 # Clonar o rAthena oficial
-git clone https://github.com/rathena/rathena.git /home/ubuntu/rathena
+git clone https://github.com/rathena/rathena.git /home/ubuntu/wellkaro/rathena
 
 # Entrar na pasta
-cd /home/ubuntu/rathena
+cd /home/ubuntu/wellkaro/rathena
 
 # Configurar e compilar
 ./configure --enable-packetver=20211103
@@ -92,7 +92,7 @@ make clean
 make server
 
 # Copiar as configurações customizadas do WellkaRO
-cp /home/ubuntu/wellkaro/server/conf/import/* /home/ubuntu/rathena/conf/import/
+cp /home/ubuntu/wellkaro/server/conf/import/* /home/ubuntu/wellkaro/rathena/conf/import/
 ```
 
 ### Editar as configurações com o IP da VPS:
@@ -101,12 +101,12 @@ cp /home/ubuntu/wellkaro/server/conf/import/* /home/ubuntu/rathena/conf/import/
 # Substituir SEU_IP_VPS_AQUI pelo IP real da VPS em todos os configs
 IP_VPS="SEU_IP_AQUI"
 
-sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/rathena/conf/import/char_conf.txt
-sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/rathena/conf/import/map_conf.txt
-sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/rathena/conf/import/login_conf.txt
+sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/wellkaro/rathena/conf/import/char_conf.txt
+sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/wellkaro/rathena/conf/import/map_conf.txt
+sed -i "s/SEU_IP_VPS_AQUI/$IP_VPS/g" /home/ubuntu/wellkaro/rathena/conf/import/login_conf.txt
 
 # Substituir a senha do banco
-sed -i "s/SUA_SENHA_AQUI/SUA_SENHA_FORTE_AQUI/g" /home/ubuntu/rathena/conf/import/inter_conf.txt
+sed -i "s/SUA_SENHA_AQUI/SUA_SENHA_FORTE_AQUI/g" /home/ubuntu/wellkaro/rathena/conf/import/inter_conf.txt
 ```
 
 ---
@@ -190,7 +190,7 @@ deactivate
 
 ### B. Iniciar rAthena:
 ```bash
-cd /home/ubuntu/rathena
+cd /home/ubuntu/wellkaro/rathena
 pm2 start ./login-server --name "rathena-login"
 pm2 start ./char-server --name "rathena-char"
 pm2 start ./map-server --name "rathena-map"
