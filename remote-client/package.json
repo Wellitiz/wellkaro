@@ -8,6 +8,7 @@
     "convert:encoding": "node convert-encoding.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "@chicowall/grf-loader": "^1.0.3"
   }
 }
