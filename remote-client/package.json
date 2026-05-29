@@ -8,7 +8,6 @@
     "convert:encoding": "node convert-encoding.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "grf-loader": "^1.0.0"
+    "express": "^4.18.2"
   }
 }
