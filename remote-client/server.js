@@ -48,6 +48,11 @@ app.get("/data/*", (req, res) => {
   // Normalize path: decode URL, convert slashes to backslashes (GRF standard)
   assetPath = decodeURIComponent(assetPath).replace(/\//g, "\\").toLowerCase();
 
+  // If the path doesn't start with "data\", prepend it because assets inside GRFs are structured under "data\"
+  if (!assetPath.startsWith("data\\")) {
+    assetPath = "data\\" + assetPath;
+  }
+
   // Search in loaded GRFs (coresnovas first, then data)
   for (let grf of grfs) {
     try {
