@@ -38,26 +38,29 @@ console.log(`[wsProxy] Forwarding to ${RATHENA_HOST}:${PORTS.login}/${PORTS.char
 
 wss.on("connection", (ws, req) => {
   const clientIP = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
-  console.log(`[wsProxy] New connection from ${clientIP}`);
+  console.log(`[wsProxy] New connection from ${clientIP} - URL: ${req.url}`);
 
   let tcpSocket = null;
   let targetPort = PORTS.login; // Default: login server
+
+  // Extract target port from URL (e.g. "/ws/127.0.0.1:6121" or "/ws/6121" or "/6121")
+  const portMatch = req.url.match(/[:/](\d+)(?:[?#]|$)/);
+  if (portMatch) {
+    const port = parseInt(portMatch[1], 10);
+    if (port === PORTS.login || port === PORTS.char || port === PORTS.map) {
+      targetPort = port;
+    }
+  }
+  console.log(`[wsProxy] Resolved target port: ${targetPort}`);
+
   let isFirstPacket = true;
 
   ws.on("message", (data) => {
-    // Se é o primeiro pacote, pode conter informação de destino
+    // Se é o primeiro pacote, abre a conexão TCP com o rAthena
     if (isFirstPacket) {
       isFirstPacket = false;
 
-      // Tenta extrair porta de destino do header customizado do roBrowser
-      // O roBrowser envia: [2 bytes port][rest of packet]
-      if (data.length >= 2) {
-        const port = data.readUInt16LE(0);
-        if (port === PORTS.login || port === PORTS.char || port === PORTS.map) {
-          targetPort = port;
-          data = data.slice(2); // Remove o header de porta
-        }
-      }
+      console.log(`[wsProxy] First packet raw hex: ${data.toString("hex")} (len: ${data.length})`);
 
       // Abre conexão TCP com o rAthena
       tcpSocket = net.createConnection({ host: RATHENA_HOST, port: targetPort }, () => {
