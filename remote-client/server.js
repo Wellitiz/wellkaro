@@ -80,7 +80,13 @@ app.get("/*", async (req, res) => {
     grfPath = "data\\" + grfPath;
   }
 
-  // Search in loaded GRFs (coresnovas first, then data)
+  // 1. Fallback to static directory if file is extracted on disk (Loose files override GRF)
+  const diskPath = path.join(DATA_DIR, reqPath);
+  if (fs.existsSync(diskPath) && fs.statSync(diskPath).isFile()) {
+    return res.sendFile(diskPath);
+  }
+
+  // 2. Search in loaded GRFs (coresnovas first, then data)
   for (let grf of grfs) {
     try {
       // Resolve path case-insensitively and slash-agnostically
@@ -108,12 +114,6 @@ app.get("/*", async (req, res) => {
     } catch (err) {
       console.error(`[RemoteClient] Error reading ${grfPath} from ${grf.name}:`, err.message);
     }
-  }
-
-  // Fallback to static directory if file is extracted on disk
-  const diskPath = path.join(DATA_DIR, reqPath);
-  if (fs.existsSync(diskPath) && fs.statSync(diskPath).isFile()) {
-    return res.sendFile(diskPath);
   }
 
   console.log(`[RemoteClient] 404 - Asset not found in GRFs or disk: ${fixedPath} (original: ${reqPath})`);
